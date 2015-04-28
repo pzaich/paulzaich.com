@@ -1,0 +1,11 @@
+# ignore log files and databases
+*.log
+*.sql
+*.sqlite
+
+# ignore Editor files
+*.sublime-project
+*.sublime-workspace
+*.komodoproject
+
+.DS_Store

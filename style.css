@@ -1,0 +1,1188 @@
+/*
+Theme Name: Paul Zaich 2015
+Theme URI: http://www.paulzaich.com
+Description: Author: Paul Zaich
+Author URI: http://www.paulzaich.com
+Version: 1
+*/
+
+/*
+	HTML5 Reset Wordpress Theme :: style.css
+	----------------------------------------------------------
+	We have learned much from/been inspired by/taken code where offered from:
+
+	Eric Meyer					:: http://ericmeyer.com
+	HTML5 Doctor				:: http://html5doctor.com
+	and the HTML5 Boilerplate	:: http://html5boilerplate.com
+
+	Special thanks: The Wordpress theme owes its start to an empty theme authored
+		by Chris Coyier & Jeff Starr: http://digwp.com
+
+-------------------------------------------------------------------------------*/
+
+/* Let's default this puppy out
+-------------------------------------------------------------------------------*/
+
+html, body, body div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, figure, footer, header, hgroup, menu, nav, section, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+article, aside, figure, footer, header, hgroup, nav, section {display: block;}
+
+/* Responsive images and other embedded objects
+   Note: keeping IMG here will cause problems if you're using foreground images as sprites, like, say for Google Maps custom placemarkers.
+   There has been a report of problems with standard Google maps as well, but we haven't been able to duplicate or diagnose the issue. */
+img,
+object,
+embed {max-width: 100%;}
+
+/* force a vertical scrollbar to prevent a jumpy page */
+html {overflow-y: scroll;}
+
+/* we use a lot of ULs that aren't bulleted.
+	don't forget to restore the bullets within content. */
+ul {list-style: none;}
+
+blockquote, q {quotes: none;}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {content: ''; content: none;}
+
+a {margin: 0; padding: 0; font-size: 100%; vertical-align: baseline; background: transparent;}
+
+del {text-decoration: line-through;}
+
+abbr[title], dfn[title] {border-bottom: 1px dotted #000; cursor: help;}
+
+/* tables still need cellspacing="0" in the markup */
+table {border-collapse: collapse; border-spacing: 0;}
+th {font-weight: bold; vertical-align: bottom;}
+td {font-weight: normal; vertical-align: top;}
+
+hr {display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0;}
+
+input, select {vertical-align: middle;}
+
+pre {
+	white-space: pre; /* CSS2 */
+	white-space: pre-wrap; /* CSS 2.1 */
+	white-space: pre-line; /* CSS 3 (and 2.1 as well, actually) */
+	word-wrap: break-word; /* IE */
+}
+
+input[type="radio"] {vertical-align: text-bottom;}
+input[type="checkbox"] {vertical-align: bottom; *vertical-align: baseline;}
+.ie6 input {vertical-align: text-bottom;}
+
+select, input, textarea {font: 99% sans-serif;}
+
+table {font-size: inherit; font: 100%;}
+
+/* Accessible focus treatment
+	people.opera.com/patrickl/experiments/keyboard/test */
+a:hover, a:active {outline: none;}
+
+small {font-size: 85%;}
+
+strong, th {font-weight: bold;}
+
+td, td img {vertical-align: top;}
+
+/* Make sure sup and sub don't screw with your line-heights
+	gist.github.com/413930 */
+sub, sup {font-size: 75%; line-height: 0; position: relative;}
+sup {top: -0.5em;}
+sub {bottom: -0.25em;}
+
+/* standardize any monospaced elements */
+pre, code, kbd, samp {font-family: monospace, sans-serif;}
+
+/* hand cursor on clickable elements */
+.clickable,
+label,
+input[type=button],
+input[type=submit],
+button {cursor: pointer;}
+
+/* Webkit browsers add a 2px margin outside the chrome of form elements */
+button, input, select, textarea {margin: 0;}
+
+/* make buttons play nice in IE */
+button {width: auto; overflow: visible;}
+
+/* scale images in IE7 more attractively */
+.ie7 img {-ms-interpolation-mode: bicubic;}
+
+/* prevent BG image flicker upon hover */
+.ie6 html {filter: expression(document.execCommand("BackgroundImageCache", false, true));}
+
+/* let's clear some floats */
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+.clear { clear: both;}
+
+/*floats*/
+.floatleft{ float: left;}
+
+floatright{float: right;}
+
+.alignright{
+	float: right;
+}
+
+.alignleft{
+	float: left;
+}
+
+.aligncenter{
+	margin: 0 auto;
+}
+
+/* Ok, this is where the fun starts.
+-------------------------------------------------------------------------------*/
+html{
+	color: white;
+}
+body {font-size: 16px;
+	color: #4a4a4a;
+	font-family: Helvetica, Arial, sans-serif;
+	height: 100%;
+	line-height: 1.35;
+}
+
+/* using local fonts? make sure to read up on Paul Irish's
+	Bulletproof @font-face syntax: http://mky.be/font-face/bulletproof/ */
+
+/*Load Fonts*/
+
+@font-face {
+    font-family: CantarellRegular;
+    src: url("fonts/cantarell-regular-webfont.eot");
+    src: local("☺"),
+    	url("fonts/cantarell-regular-webfont.woff") format("woff"),
+    	url("fonts/cantarell-regular-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: CantarellBold;
+    src: url("fonts/cantarell-bold-webfont.eot");
+    src: local("☺"),
+    	url("fonts/cantarell-bold-webfont.woff") format("woff"),
+    	url("fonts/cantarell-bold-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: YK;
+    src: url("fonts/yanonekaffeesatz-light-webfont.eot");
+    src: local("☺"),
+    	url("fonts/yanonekaffeesatz-light-webfont.woff") format("woff"),
+    	url("fonts/yanonekaffeesatz-light-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+	font-family: Alegreya-Bold;
+	src: url("fonts/alegreya-bold-webfont.eot");
+	src: local("☺"),
+		url("fonts/alegreya-bold-webfont.woff") format("woff"),
+		url("fonts/alegreya-bold-webfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: Font-Awesome;
+	src: url("fonts/fontawesome-webfont.eot");
+	src: local("☺"),
+		url("fonts/fontawesome-webfont.woff") format("woff"),
+		url("fonts/fontawesome-webfont.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+/* we like off-black for text */
+select, input, textarea {color: #333;}
+
+/*Global Styles*/
+h1, h2, h3, h4, h5, h6 {
+	font-family: YK, CantarellRegular, Times New Roman, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin: 0 0 10px 0;
+	text-transform: uppercase;
+}
+
+h1{
+	font-size: 48px;
+	text-shadow: 2px 2px 3px #666;
+	margin: 30px 0 10px 0;
+}
+
+h2 { font-size: 36px; margin-top: 20px; text-shadow: 1px 1px 2px #666;
+}
+h3 { font-size: 28px;}
+
+h4 { font-size: 22px;
+}
+
+h5{
+	font-size: 18px;
+}
+
+p {
+	margin: 0 0 10px 0;
+}
+
+a { color: #333;
+}
+a:hover { background: #555; color: #fff; text-decoration: none;
+}
+
+
+ul, ol { margin: 0 0 10px 0; }
+
+input[type="text"], textarea {
+
+}
+
+code{
+	background: #333;
+ 	color: #fff;
+	padding: 10px;
+	margin: 10px;
+	border: 1px solid #fff;
+	width: 560px;
+	display: block;
+	font-size: 14px;
+}
+
+/* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
+::-moz-selection{background: #eeeeee; color: #fff; text-shadow: none;}
+::selection {background: #eeeeee; color: #fff; text-shadow: none;}
+
+/*	j.mp/webkit-tap-highlight-color */
+a:link {-webkit-tap-highlight-color: #eeeeee;}
+
+ins {background-color: #eeeeee; color: #000; text-decoration: none;}
+mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: bold;}
+
+
+.button{
+	background: -moz-linear-gradient(top, #96d166 0%, #7fc14d 50%, #96d166 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#96d166), color-stop(50%,#7fc14d), color-stop(100%,#96d166)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #96d166 0%,#7fc14d 50%,#96d166 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #96d166 0%,#7fc14d 50%,#96d166 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #96d166 0%,#7fc14d 50%,#96d166 100%); /* IE10+ */
+	background: linear-gradient(top, #96d166 0%,#7fc14d 50%,#96d166 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96d166', endColorstr='#96d166',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #7fc14d;
+	border-radius: 3px;
+	padding: 10px 20px 8px 20px;
+	color: #fff;
+	text-shadow: 0px 2px 3px #ADCE92;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-family: YK, CantarellRegular, Times New Roman, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+
+.button:hover{
+	background: -moz-linear-gradient(top, #78ce31 0%, #63bf1c 50%, #78ce31 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#78ce31), color-stop(50%,#63bf1c), color-stop(100%,#78ce31)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #78ce31 0%,#63bf1c 50%,#78ce31 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #78ce31 0%,#63bf1c 50%,#78ce31 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #78ce31 0%,#63bf1c 50%,#78ce31 100%); /* IE10+ */
+	background: linear-gradient(top, #78ce31 0%,#63bf1c 50%,#78ce31 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78ce31', endColorstr='#78ce31',GradientType=0 ); /* IE6-9 */
+	text-shadow: 0 2px 2px #999;
+
+}
+
+.btn {
+	display: block;
+	padding: 5px 10px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+.btn.dark{
+	background: rgba(0,0,0,0.8);
+	color: #fff;
+}
+
+.btn.dark:hover{
+	background: rgba(0,0,0,1);
+}
+
+
+/*Basic Structure of Site, 100% height website fix*/
+
+.ie7 .wrapper{
+	position: relative;
+	z-index: 10;
+}
+
+.content-wrapper{
+	width: 100%;
+	padding: 0 0px 80px 0px;
+}
+
+#header{
+	height: 150px;
+	position: relative;
+	background: linear-gradient( 172deg, #1EF2B4, #51B5EC);
+}
+
+.content-inner-wrapper {    }
+
+
+ /*Header & Navbar Styles*/
+
+#header .logo{
+	font-family: YK, CantarellRegular, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-size: 66px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+	background-color: white;
+	text-decoration: none;
+	display: block;
+	width: 60px;
+	padding-top: 6px;
+	padding-bottom: 4px;
+	text-align: center;
+	float: left;
+	margin-left: 40px;
+}
+
+#header nav a:hover{
+	background: none;
+}
+
+#header nav{
+	float: right;
+	margin-right: 40px;
+}
+
+ul.navbar {
+	font-family: YK, CantarellRegular, Helvetica Neue, Helvetica, Arial, sans-serif;
+ 	list-style: none;
+ 	margin-top: 30px;
+ }
+
+ ul.navbar li{
+ 	font-size: 24px;
+ 	display: inline;
+ 	margin-left: 60px;
+ 	padding: 10px;
+ }
+
+ ul.navbar li:hover,  ul.navbar li.current{
+ 	background: rgba(255,255,255, 0.8);
+ 	border: 1px solid #aaa;
+ 	border-radius: 3px;
+ 	padding: 9px;
+ }
+
+ ul.navbar li.current a{
+ 	color: #333;
+ }
+
+
+ ul.navbar li a{
+ 	color: #333;
+ 	text-transform: uppercase;
+ 	text-decoration: none;
+ }
+
+ ul.navbar li:hover a{
+ 	color: #333;
+ }
+
+
+
+ /*Homepage Specific Styles--------------------------------------------------------------*/
+
+ .home .content-inner-wrapper{
+ 	width: 100%;
+
+ }
+
+ .home .content-wrapper{
+ 	position: relative;
+ }
+
+.home ul.navbar li a {
+	color: #fff;
+}
+
+.home ul.navbar li:hover{
+	border: 1px solid #fff;
+}
+
+.home ul.navbar li:hover a{
+	color: #333;
+}
+
+.main-feature{
+	padding: 0 2%;
+	height: 482px;
+	color: #fff;
+	text-shadow: 1px 1px 3px #444;
+}
+
+.name{
+	font-size: 80px;
+}
+
+.main-feature a{
+	color: #fff;
+	text-decoration: none;
+}
+
+.main-feature a:hover{
+	background: none;
+}
+
+.btn-cont{
+	position: absolute;
+	bottom: 20px;
+}
+
+
+ .examples .btn{
+ 	margin: 0 10px;
+ 	float: right;
+ }
+
+ .technologies li{
+ 	font-family: YK, sans-serif;
+ 	font-size: 18px;
+ 	float: left;
+ 	padding: 8px 10px;
+ 	margin-right: 20px;
+ 	margin-bottom: 20px;
+ 	box-shadow: inset 0 -1px 3px #888;
+ 	border-radius: 3px;
+ 	text-transform: uppercase;
+ }
+
+ .technologies li:hover{
+ 	box-shadow: inset 0 -1px 3px #888, 0px 0px 4px #fff;
+ }
+
+ .technologies li.rails, .technologies li.ruby{
+ 	color: #D90000;
+ }
+
+ .technologies li.css, .technologies li.haml{
+ 	color: #ff8000;
+ }
+
+ .technologies li.js{
+ 	color: #00008C;
+ }
+
+
+
+ @media screen and (max-width: 1919px) {
+ 	.examples li{
+ 		width: 280px;
+ 	}
+
+ 	.examples li img{
+ 		width: 280px;
+ 	}
+ }
+
+ @media screen and (max-width: 1440px) {
+ 	.examples li{
+ 		width: 210px;
+ 	}
+
+ 	.examples li img{
+ 		width: 210px;
+ 	}
+
+ }
+
+
+ /*My Work*/
+ .site-container{
+ 	position: relative;
+ 	z-index: 20;
+ 	overflow: hidden;
+ 	padding-bottom: 20px;
+ 	background: url(images/entry_border.png) bottom left repeat-x;
+ }
+
+ .site-container:last-child{
+ 	background: none;
+ }
+
+ .site-container h4{
+ 	margin-bottom: 5px;
+ }
+
+ .site-container p{
+ 	font-size: 16px;
+ }
+ .site-container .technologies{
+ 	padding-top: 20px;
+ }
+
+ .site-container .btn{
+ 	float: right;
+ 	position:relative;
+ 	top: -40px;
+ }
+
+ .site-container .subfeatures {
+ 	padding-top: 20px;
+ 	overflow: hidden;
+ 	padding-bottom: 5px;
+ }
+
+ .site-container .subfeatures img{
+ 	background: #fff;
+ 	box-shadow: 0px 3px 3px #999;
+ 	width: 300px;
+ 	height: 200px;
+ 	margin-right: 30px;
+ 	float: left;
+ 	display: block;
+ }
+
+ .site-container .subfeatures img.last{
+ 	float: right;
+ 	margin-right: 0;
+ }
+
+
+
+
+
+
+ /*Recent Photos*/
+
+ .recent-photos ul{
+ 	position: relative;
+ 	left: -20px;
+ 	width: 660px;
+
+ }
+
+ .recent-photos ul li{
+ 	float: left;
+ 	margin: 0px 0px 20px 20px;
+ 	padding: 5px;
+ 	box-shadow: 0px 3px 3px #4a4a4a;
+ 	background: #fff;
+ 	height: 135px;
+ 	width: 135px;
+ }
+
+ .recent-photos ul li:hover{
+ 	opacity: .8;
+ 	padding: 4px;
+ 	border: 1px solid #dedede;
+ }
+
+.recent-photos ul li a:hover{
+	background: none;
+}
+
+
+/*Footer Syles----------------------------------------------------------------------------------------------*/
+
+#footer{
+	position: relative;
+}
+
+#footer-wrapper small{
+	display: block;
+	text-align: left;
+	padding-top: 20px;
+}
+
+#footer i{
+	font-family: Font-Awesome;
+}
+
+a#contact-me{
+	display: block;
+	float: right;
+	font-size: 20px;
+	text-transform: uppercase;
+	font-family: YK, CantarellRegular, Times New Roman, Helvetica Neue, Helvetica, Arial, sans-serif;
+	text-decoration: none;
+	text-align: center;
+	padding: 9px 15px 8px 15px;
+	background: #111;
+	color: #fff;
+}
+
+a#contact-me:hover, a#contact-me.active:hover {
+	border: 1px solid #333;
+	background: #fff;
+	color: #333;
+	text-shadow: none;
+	padding: 9px 14px 8px 14px;
+}
+
+a#contact-me.active {
+	background: #fff;
+	color: #333;
+	text-shadow: 1px 1px 1px #4A4A4A;
+}
+
+
+#contact-holder{
+	width: 320px;
+	background: #fff;
+	padding: 10px;
+	display: none;
+	position: absolute;
+	bottom: 32px;
+	right: 0px;
+	box-shadow: 0px -3px 3px #4A4A4A;
+	z-index: 20;
+}
+
+#contact-holder input[type="text"]{
+	width: 300px;
+}
+
+#contact-holder textarea{
+	width: 304px;
+}
+
+#contact-holder .input-container{
+	margin: 5px;
+	position: relative;
+}
+
+#contact-holder input[type="text"]:hover, #contact-holder textarea:hover, #contact-holder input[type="text"]:active, #contact-holder textarea:active{
+	box-shadow: 0 3px 3px 0 #4A4A4A;
+}
+
+#contact-holder .button{
+	margin-right: 9px;
+	margin-bottom: 5px;
+	float: right;
+}
+
+/*Contact Form----------------------------------------------------------------------------------------------*/
+#contact-holder div.wpcf7 {
+	margin: 0;
+	padding: 0;
+}
+
+#contact-holder div.wpcf7-response-output {
+	clear: both;
+	margin: 5px;
+	padding: 5px;
+}
+
+#contact-holder div.wpcf7-mail-sent-ok {
+	background-color: #398f14;
+}
+
+#contact-holder div.wpcf7-mail-sent-ng {
+	display: block;
+	font-size: 10pt;
+	padding: 2px;
+	margin: 5px 0 5px 0;
+	color: #FF0000;
+	border: 1px solid #ff0000;
+}
+
+#contact-holder div.wpcf7-spam-blocked {
+	display: block;
+	font-size: 10pt;
+	padding: 2px;
+	margin: 5px 0 5px 0;
+	color: #FF0000;
+	border: 1px solid #ff0000;
+}
+
+#contact-holder div.wpcf7-validation-errors {
+	display: block;
+	font-size: 10pt;
+	padding: 2px;
+	margin: 5px 0 5px 0;
+	color: #FF0000;
+	border: 1px solid #ff0000;
+}
+
+#contact-holder span.wpcf7-form-control-wrap {
+	position: relative;
+}
+
+#contact-holder span.wpcf7-not-valid-tip {
+	display: block;
+	font-size: 10pt;
+	padding: 2px;
+	margin: 5px 0 5px 0;
+	color: #FF0000;
+}
+
+#contact-holder span.wpcf7-not-valid-tip-no-ajax {
+	color: #f00;
+	font-size: 10pt;
+	display: block;
+}
+
+#contact-holder span.wpcf7-list-item {
+	margin-left: 0.5em;
+}
+
+#contact-holder .wpcf7-display-none {
+	display: none;
+}
+
+#contact-holder div.wpcf7 img.ajax-loader {
+	border: none;
+	vertical-align: middle;
+	margin-left: 4px;
+}
+
+#contact-holder div.wpcf7 .watermark {
+	color: #888;
+}
+
+/* And here begins the Wordpress fun.
+-------------------------------------------------------------------------------*/
+
+#page-wrap {width: 960px; margin: 20px auto;}
+
+.post {}
+
+.entry-container{
+	margin-top: 10px;
+}
+
+.entry-content { padding: 20px 10px 20px 10px; position: relative;  overflow: hidden; margin-bottom: 10px; width: 600px; font-size: 14px; background: url(images/entry_border.png) bottom left repeat-x;
+}
+
+
+article.page .entry-content{
+	font-size: 16px;
+	/*background: rgba(0,0,0,0.15);*/
+	background: none;
+	border-radius: 3px;
+	width: 920px;
+}
+
+.format-standard .entry-content{
+	float: left;
+	margin-right: 10px;
+}
+
+.format-standard .tags{
+	float: right;
+}
+
+article.page .entry-content img{
+	margin-left: 10px;
+}
+
+article.page .entry-content img{
+	border: 5px solid #fff;
+}
+
+.entry-content a {}
+.entry-content a:hover { background: none; color: #333; text-decoration: none;
+}
+
+.entry-content li{
+	margin: 0 0 10px 0;
+}
+
+.entry-content h3{
+	margin: 10px 0 0 10px;
+}
+
+.archive-container{
+	width: 720px;
+}
+
+.meta {
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+.meta span.label{
+	text-transform: uppercase;
+}
+
+.meta span.cat{
+	font-weight: bold;
+}
+
+.meta span.label.date{
+	margin-left: 30px;
+}
+
+.meta .fb_edge_widget_with_comment{
+	margin-left: 30px;
+}
+.postmetadata {}
+
+
+
+#sidebar {
+	float: left;
+	width: 220px;
+	padding: 0 10px 0 10px;
+	position: relative;
+}
+
+#sidebar h2{
+	margin-top: 0px;
+}
+
+#sidebar ul li{
+	margin-bottom: 6px;
+	font-size: 14px;
+}
+
+#sidebar ul{
+	padding-bottom: 20px;
+	background: url(images/entry_border.png) bottom left repeat-x;
+}
+
+#sidebar ul:last-child{
+	background: none;
+}
+
+.navigation {
+}
+.next-posts {}
+.prev-posts {}
+
+#searchform {}
+#s {}
+#searchsubmt {}
+
+#respond{
+	padding-top: 20px;
+
+}
+
+/*About Page*/
+
+
+
+.wp-caption{
+	border: 1px solid #c8c8c8;
+	padding: 20px 10px 10px 10px;
+	background: rgba(255,255,255, .8);
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.wp-caption p{
+	margin: 0;
+	padding-top: 10px;
+	width: auto;
+	font-style: italic;
+}
+/*COMMENTS AREA --------------------------------------------------------------------------------------------------------------------*/
+
+#comments{
+	margin-top: 20px;
+}
+
+ol.commentlist {list-style: none; position: relative;
+}
+ol.commentlist li {
+}
+ol.commentlist li.alt {}
+ol.commentlist li.bypostauthor {}
+ol.commentlist li.byuser {}
+ol.commentlist li.comment-author-admin {}
+ol.commentlist li.comment {margin-top: 10px;
+}
+ol.commentlist li.comment div.comment-body{background: #fff;  padding: 10px; box-shadow: 0 7px 7px 0 #4A4A4A; margin-left: 20px;
+}
+ol.commentlist li.comment div.comment-author {}
+ol.commentlist li.comment div.vcard {display: inline;}
+ol.commentlist li.comment div.vcard cite.fn {font-style: normal; font-weight: bold;
+}
+ol.commentlist li.comment div.vcard cite.fn a.url {}
+ol.commentlist li.comment div.vcard img.avatar {float: left; margin: 0 10px 10px 0px;}
+ol.commentlist li.comment div.vcard img.avatar-32 {}
+ol.commentlist li.comment div.vcard img.photo {}
+ol.commentlist li.comment div.vcard span.says {}
+ol.commentlist li.comment div.commentmetadata {float: right;
+}
+ol.commentlist li.comment div.comment-meta {}
+ol.commentlist li.comment div.comment-meta a {}
+ol.commentlist li.comment p {margin: 10px 0 10px 0;}
+ol.commentlist li.comment ul {}
+ol.commentlist li.comment div.reply {float: right;}
+ol.commentlist li.comment div.reply a {font-weight: bold;}
+ol.commentlist li.comment ul.children {list-style: none; margin: 10px 0 0;}
+ol.commentlist li.comment ul.children li {}
+ol.commentlist li.comment ul.children li.alt {}
+ol.commentlist li.comment ul.children li.bypostauthor {}
+ol.commentlist li.comment ul.children li.byuser {}
+ol.commentlist li.comment ul.children li.comment {}
+ol.commentlist li.comment ul.children li.comment-author-admin {}
+ol.commentlist li.comment ul.children li.depth-2 {margin: 0 0 10px 10px;}
+ol.commentlist li.comment ul.children li.depth-3 { margin: 0 0 10px 10px;}
+ol.commentlist li.comment ul.children li.depth-4 { margin: 0 0 10px 10px;}
+ol.commentlist li.comment ul.children li.depth-5 {}
+ol.commentlist li.comment ul.children li.odd {}
+ol.commentlist li.even {}
+ol.commentlist li.odd {}
+ol.commentlist li.parent {}
+ol.commentlist li.thread-alt {}
+ol.commentlist li.thread-even {}
+ol.commentlist li.thread-odd {}
+
+#comment-user-details div{
+	padding: 8px 0 0px 0;
+}
+
+#comment-user-details input{
+	width: 320px;
+}
+
+#comment-user-details input:hover, #comment-user-details input:active{
+	box-shadow: 0 3px 3px 0 #4A4A4A;
+}
+
+textarea#comment{
+	margin: 10px 0 10px 0;
+	height: 40px;
+	min-height: 80px;
+
+}
+
+textarea#comment:hover, #comment-user-details input:active{
+	box-shadow: 0 7px 7px 0 #4A4A4A;
+}
+
+
+/*Photo Specific Styling*
+-------------------------------------------------------------------------------------*/
+
+#screen {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	top:  0;
+	left: 0;
+	z-index: 9000;
+	background: rgba(0,0,0, 0.9);
+}
+
+.post-image-container{
+	text-align: center;
+}
+
+.post-image-container img{
+	border: 6px solid #fff;
+	box-shadow: 0 2px 5px 0 #4A4A4A;
+	cursor: pointer;
+}
+
+.entry-content.photo{
+	float: left;
+	padding: 0;
+	width: 600px;
+	margin-right: 10px;
+	background: #fff;
+	box-shadow: 0 2px 5px #4A4A4A;
+}
+
+.entry-content.photo p{
+	padding: 10px 10px 0px 10px;
+}
+
+ul.tags{
+	font-size: 14px;
+	float: left;
+	width: 310px;
+	min-height: 20px;
+	position: relative;
+}
+
+ul.tags li{
+	border: 1px solid #000;
+}
+
+ul.tags li a{
+	background: rgba(0,0,0, 0.8);
+	padding: 6px 8px 6px 8px;
+	border-radius: 3px;
+
+	display: inline-block;
+	color: #fff;
+	text-decoration: none;
+}
+
+ul.tags li a:hover{
+	background: none;
+}
+
+ul.tags li:hover a{
+}
+
+ul.tags li:hover{
+	background: #fff;
+	background: -moz-linear-gradient(top, #96d166 0%, #7fc14d 50%, #96d166 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#96d166), color-stop(50%,#7fc14d), color-stop(100%,#96d166)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #96d166 0%,#7fc14d 50%,#96d166 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #96d166 0%,#7fc14d 50%,#96d166 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #96d166 0%,#7fc14d 50%,#96d166 100%); /* IE10+ */
+	background: linear-gradient(top, #96d166 0%,#7fc14d 50%,#96d166 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96d166', endColorstr='#96d166',GradientType=0 ); /* IE6-9 */
+	border: 1px solid #7fc14d;
+}
+
+ul h3 {
+	margin: 10px 0 0 10px;
+}
+
+ul.tags li{
+	float: left;
+	margin: 10px 10px 10px 10px;
+	border-radius: 3px;
+}
+
+/*.entry-content.photo:hover{
+	padding: 15px 5px 5px 5px;
+	border: 5px solid #f6f6f6;
+}
+
+/*Archive Pages
+--------------------------------------------------------------------------------------------------------------------*/
+
+.archive-photo-container{
+	float: left;
+	margin: 0px 10px 10px 0;
+	background: #fff;
+	position: relative;
+	width: 210px;
+	padding: 10px 10px 0 10px;
+	box-shadow: 0px 3px 3px #4a4a4a;
+}
+
+.archive-photo-container a.archive-thumb{
+	display: block;
+	overflow: hidden;
+	height: 140px;
+
+}
+
+.archive-photo-container a.archive-thumb img:hover{
+	opacity: .8;
+}
+
+
+.archive-photo-container a.archive-thumb:hover{
+	background: none;
+}
+
+.archive-photo-container h4{
+	float: left;
+	margin-top: 10px;
+	width: 135px;
+	height: 26px;
+	overflow: hidden;
+}
+
+.archive-photo-container .fb_edge_widget_with_comment{
+	float: left;
+	width: 48px;
+	position: absolute;
+	top: 164px;
+	right: 40px;
+}
+
+
+
+/* Print styles!
+-------------------------------------------------------------------------------*/
+@media print {
+
+.do-not-print { display: none; }
+#comments { page-break-before: always; }
+
+body { width: 100% !important; margin: 0 !important; padding: 0 !important; line-height: 1.4; word-spacing: 1.1pt; letter-spacing: 0.2pt; font-family: Garamond,"Times New Roman", serif; color: #000; background: none; font-size: 12pt; }
+h1,h2,h3,h4,h5,h6 { font-family: Helvetica, Arial, sans-serif; }
+h1 { font-size: 19pt; }
+h2 { font-size:17pt; }
+h3 { font-size:15pt; }
+h4,h5,h6 { font-size:12pt; }
+code { font: 10pt Courier, monospace; }
+blockquote { margin: 1.3em; padding: 1em; }
+img { display: block; margin: 1em 0; }
+a img { border: none; }
+table { margin: 1px; text-align:left; }
+th { border-bottom: 1px solid #333;  font-weight: bold; }
+td { border-bottom: 1px solid #333; }
+th, td { padding: 4px 10px 4px 0; }
+caption { background: #fff; margin-bottom: 2em; text-align: left; }
+thead { display: table-header-group; }
+tr { page-break-inside: avoid; }
+a { text-decoration: none; color: black; }
+
+} /* END print media */
+
+
+
+/* Media queries!
+-------------------------------------------------------------------------------*/
+
+/* Consider this: www.cloudfour.com/css-media-query-for-mobile-is-fools-gold/ */
+/*@media screen and (max-device-width: 1920px) {
+	.content-inner-wrapper{
+		width: 1270px;
+	}
+
+	.archive-container{
+		width: 1030px;
+	}
+
+}
+
+@media screen and (max-device-width: 1440px) {
+	.content-inner-wrapper{
+		width: 1270px;
+	}
+
+	.archive-container{
+		width: 1030px;
+	}
+}
+
+@media screen and (max-device-width: 1080px) {
+
+
+}
+
+@media all and (orientation: portrait) {
+
+}*/
+
+@media all and (orientation: landscape) {
+
+}
