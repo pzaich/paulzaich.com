@@ -57,7 +57,7 @@ var pz = {
 			colorPairs = newColorHexes;
 		};
 
-		var LOOP_INTERVAL = 6000;
+		var LOOP_INTERVAL = 3000;
 		var INTERVAL = 80;
 
 		this.init = function () {

@@ -1,8 +1,8 @@
 
 <?php get_header(); ?>
-		
+
 		<?php if (have_posts()) : ?>
-			
+
  			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
 
 			<?php /* If this is a category archive */ if (is_category()) { ?>
@@ -25,13 +25,14 @@
 
 			<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 				<h1 class="pagetitle">Blog Archives</h1>
-			
+
 			<?php } ?>
+			<h1>Hello</h1>
 			<div class="floatleft archive-container">
 			<?php while (have_posts()) : the_post(); ?>
-				
+
 				<?php if (yapb_is_photoblog_post()): ?>
-				
+
 					<article <?php post_class('archive-photo-container') ?> >
 						<?php $img_title = get_the_title(); ?>
 							<a class="archive-thumb" href="<?php the_permalink() ?>"><?php yapb_thumbnail('', array('alt' => $img_title), '', array('w=210','h=140', 'zc=1', 'q=90')); ?></a>
@@ -42,9 +43,9 @@
 					<article <?php post_class() ?> >
 						<div class="entry-content">
 							<h4 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h4>
-												
+
 								<?php include (TEMPLATEPATH . '/_/inc/meta.php' ); ?>
-		
+
 								<div class="entry">
 									<?php the_excerpt(); ?>
 								</div>

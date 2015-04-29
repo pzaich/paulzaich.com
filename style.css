@@ -133,7 +133,7 @@ button {width: auto; overflow: visible;}
 /*floats*/
 .floatleft{ float: left;}
 
-floatright{float: right;}
+.floatright{float: right;}
 
 .alignright{
 	float: right;
@@ -147,14 +147,24 @@ floatright{float: right;}
 	margin: 0 auto;
 }
 
+/*Use border-box*/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 /* Ok, this is where the fun starts.
 -------------------------------------------------------------------------------*/
 html{
 	color: white;
 }
-body {font-size: 16px;
+body {
+	font-size: 18px;
 	color: #4a4a4a;
-	font-family: Helvetica, Arial, sans-serif;
+	font-family: Lato, Helvetica, Arial, sans-serif;
 	height: 100%;
 	line-height: 1.35;
 }
@@ -165,26 +175,6 @@ body {font-size: 16px;
 /*Load Fonts*/
 
 @font-face {
-    font-family: CantarellRegular;
-    src: url("fonts/cantarell-regular-webfont.eot");
-    src: local("☺"),
-    	url("fonts/cantarell-regular-webfont.woff") format("woff"),
-    	url("fonts/cantarell-regular-webfont.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: CantarellBold;
-    src: url("fonts/cantarell-bold-webfont.eot");
-    src: local("☺"),
-    	url("fonts/cantarell-bold-webfont.woff") format("woff"),
-    	url("fonts/cantarell-bold-webfont.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: YK;
     src: url("fonts/yanonekaffeesatz-light-webfont.eot");
     src: local("☺"),
@@ -192,16 +182,6 @@ body {font-size: 16px;
     	url("fonts/yanonekaffeesatz-light-webfont.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
-}
-
-@font-face {
-	font-family: Alegreya-Bold;
-	src: url("fonts/alegreya-bold-webfont.eot");
-	src: local("☺"),
-		url("fonts/alegreya-bold-webfont.woff") format("woff"),
-		url("fonts/alegreya-bold-webfont.ttf") format("truetype");
-	font-weight: normal;
-	font-style: normal;
 }
 
 @font-face {
@@ -215,12 +195,33 @@ body {font-size: 16px;
 }
 
 
+@font-face {
+    font-family: Lato;
+    src: url("fonts/lato-lig-webfont.eot");
+    src: local("☺"),
+    	url("fonts/lato-lig-webfont.woff") format("woff"),
+    	url("fonts/lato-lig-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: Lato;
+    src: url("fonts/lato-reg-webfont.eot");
+    src: local("☺"),
+    	url("fonts/lato-reg-webfont.woff") format("woff"),
+    	url("fonts/lato-reg-webfont.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
 /* we like off-black for text */
 select, input, textarea {color: #333;}
 
 /*Global Styles*/
 h1, h2, h3, h4, h5, h6 {
-	font-family: YK, CantarellRegular, Times New Roman, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: YK, Times New Roman, Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-weight: normal;
 	margin: 0 0 10px 0;
 	text-transform: uppercase;
@@ -228,11 +229,10 @@ h1, h2, h3, h4, h5, h6 {
 
 h1{
 	font-size: 48px;
-	text-shadow: 2px 2px 3px #666;
 	margin: 30px 0 10px 0;
 }
 
-h2 { font-size: 36px; margin-top: 20px; text-shadow: 1px 1px 2px #666;
+h2 { font-size: 36px;
 }
 h3 { font-size: 28px;}
 
@@ -243,15 +243,19 @@ h5{
 	font-size: 18px;
 }
 
-p {
-	margin: 0 0 10px 0;
+p{
+	margin: 0 0 15px 0;
+	line-height: 1.5;
 }
 
-a { color: #333;
-}
-a:hover { background: #555; color: #fff; text-decoration: none;
+a {
+	color: #333;
+	text-decoration: none;
 }
 
+a:hover {
+	text-decoration: underline;
+}
 
 ul, ol { margin: 0 0 10px 0; }
 
@@ -268,6 +272,10 @@ code{
 	width: 560px;
 	display: block;
 	font-size: 14px;
+}
+
+img {
+	max-width: 100%;
 }
 
 /* Custom text-selection colors (remove any text shadows: twitter.com/miketaylr/status/12228805301) */
@@ -296,7 +304,7 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
 	text-shadow: 0px 2px 3px #ADCE92;
 	text-transform: uppercase;
 	font-size: 20px;
-	font-family: YK, CantarellRegular, Times New Roman, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: YK, Times New Roman, Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 .button:hover{
@@ -327,17 +335,14 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
 	background: rgba(0,0,0,1);
 }
 
-
-/*Basic Structure of Site, 100% height website fix*/
-
-.ie7 .wrapper{
-	position: relative;
-	z-index: 10;
+.content-wrapper{
+	padding: 0 0px 20px 0px;
 }
 
-.content-wrapper{
-	width: 100%;
-	padding: 0 0px 80px 0px;
+.main-col {
+	float: left;
+	width: 66.666666666%;
+	padding: 0 2.5em;
 }
 
 #header{
@@ -346,13 +351,16 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
 	background: linear-gradient( 172deg, #1EF2B4, #51B5EC);
 }
 
-.content-inner-wrapper {    }
-
+.content-inner-wrapper {
+	padding: 0 1em;
+	max-width: 960px;
+	margin: 0 auto;
+}
 
  /*Header & Navbar Styles*/
 
 #header .logo{
-	font-family: YK, CantarellRegular, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: YK, Helvetica Neue, Helvetica, Arial, sans-serif;
 	font-size: 66px;
 	border-bottom-left-radius: 3px;
 	border-bottom-right-radius: 3px;
@@ -364,7 +372,7 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
 	padding-bottom: 4px;
 	text-align: center;
 	float: left;
-	margin-left: 40px;
+	margin-left: 10px;
 }
 
 #header nav a:hover{
@@ -377,31 +385,29 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
 }
 
 ul.navbar {
-	font-family: YK, CantarellRegular, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: YK, Helvetica Neue, Helvetica, Arial, sans-serif;
  	list-style: none;
  	margin-top: 30px;
  }
 
  ul.navbar li{
  	font-size: 24px;
- 	display: inline;
+ 	display: inline-block;
  	margin-left: 60px;
- 	padding: 10px;
  }
 
  ul.navbar li:hover,  ul.navbar li.current{
- 	background: rgba(255,255,255, 0.8);
- 	border: 1px solid #aaa;
- 	border-radius: 3px;
- 	padding: 9px;
+ 	background: rgba(255,255,255, 0.5);
  }
 
  ul.navbar li.current a{
  	color: #333;
+ 	display: block;
  }
 
-
  ul.navbar li a{
+ 	display: block;
+ 	padding: 10px;
  	color: #333;
  	text-transform: uppercase;
  	text-decoration: none;
@@ -410,31 +416,6 @@ ul.navbar {
  ul.navbar li:hover a{
  	color: #333;
  }
-
-
-
- /*Homepage Specific Styles--------------------------------------------------------------*/
-
- .home .content-inner-wrapper{
- 	width: 100%;
-
- }
-
- .home .content-wrapper{
- 	position: relative;
- }
-
-.home ul.navbar li a {
-	color: #fff;
-}
-
-.home ul.navbar li:hover{
-	border: 1px solid #fff;
-}
-
-.home ul.navbar li:hover a{
-	color: #333;
-}
 
 .main-feature{
 	padding: 0 2%;
@@ -626,7 +607,7 @@ a#contact-me{
 	float: right;
 	font-size: 20px;
 	text-transform: uppercase;
-	font-family: YK, CantarellRegular, Times New Roman, Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-family: YK, Times New Roman, Helvetica Neue, Helvetica, Arial, sans-serif;
 	text-decoration: none;
 	text-align: center;
 	padding: 9px 15px 8px 15px;
@@ -768,7 +749,9 @@ a#contact-me.active {
 
 #page-wrap {width: 960px; margin: 20px auto;}
 
-.post {}
+.post {
+	margin: 40px 0 80px 0;
+}
 
 .entry-container{
 	margin-top: 10px;
@@ -845,7 +828,7 @@ article.page .entry-content img{
 
 #sidebar {
 	float: left;
-	width: 220px;
+	width: 33.33333333%;
 	padding: 0 10px 0 10px;
 	position: relative;
 }
@@ -1174,15 +1157,44 @@ a { text-decoration: none; color: black; }
 	}
 }
 
-@media screen and (max-device-width: 1080px) {
-
-
-}
 
 @media all and (orientation: portrait) {
 
 }*/
 
-@media all and (orientation: landscape) {
+/*Mobile browsers*/
 
+
+@media (max-width: 767px) {
+	#header{
+		height: auto;
+	}
+
+	#header .content-inner-wrapper {
+		padding: 0;
+	}
+
+	#header .logo {
+		position: absolute;
+	}
+
+	#header nav a:hover{
+		background: none;
+	}
+
+	#header nav{
+		float: none;
+		margin: 0;
+	}
+
+	ul.navbar {
+	 	list-style: none;
+	 	margin-top: 0;
+	 }
+
+  ul.navbar li{
+ 		display: block;
+ 		margin-left: 0;
+ 		text-align: right;
+  }
 }

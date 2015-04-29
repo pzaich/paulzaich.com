@@ -1,15 +1,15 @@
-<?php  
-    /* Template Name: Recent Work */  
-    get_header();  
-?> 
+<?php
+    /* Template Name: Recent Work */
+    get_header();
+?>
 <h1>Recent Work</h1>
 
 <div class="site-container">
 	<h2>Medical Ambassadors International Online Curriculum</h2>
 	<h4>Objective</h4>
-	<p>Build a visually intuitive web application that allows the quick search and download of 8000+ Microsoft® Word and PDF documents.</p>	
+	<p>Build a visually intuitive web application that allows the quick search and download of 8000+ Microsoft® Word and PDF documents.</p>
 	<div class="post-image-container">
-		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/mai_main.jpg" width="948" height="632" />
+		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/mai_main.jpg" />
 	</div>
 	<ul class="technologies">
 		<li class="css">CSS</li>
@@ -23,11 +23,11 @@
 <div class="site-container">
 	<h2>Finis Inc</h2>
 	<h4>Objective</h4>
-	<a href="http://www.finisinc.com" class="btn dark">Visit</a>	
+	<a href="http://www.finisinc.com" class="btn dark">Visit</a>
 	<p>Establish an enhanced ecommerce & web presence for FINIS Inc.</p>
 	<!--948 x 632 -->
 	<div class="post-image-container">
-		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/finis_main.jpg" width="948" height="632" />
+		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/finis_main.jpg" />
 	</div>
 	<div class="subfeatures">
 		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/finis_sub1.jpg">
@@ -48,7 +48,7 @@
 	<h4>Objective</h4>
 	<p>Redesign and rebrand the existing UpMyGame site experience. Enhance the existing marketing copy to create a more engaging introduction to UpMyGame's unique feature set.</p>
 	<div class="post-image-container">
-		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/upmygame_main.jpg" width="948" height="632" />
+		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/upmygame_main.jpg" />
 	</div>
 	<div class="subfeatures">
 		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/upmygame_sub1.jpg">
@@ -65,10 +65,10 @@
 <div class="site-container">
 	<h2>Custom Swimsuit Studio by FINIS</h2>
 	<h4>Objective</h4>
-	<a href="http://custom.finisinc.com" class="btn dark">Visit</a>	
+	<a href="http://custom.finisinc.com" class="btn dark">Visit</a>
 	<p>Empower teams, coaches and swimmers to design and order their own custom swimsuit designs, produced and delivered within 4 weeks of order placement.</p>
 	<div class="post-image-container">
-		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/custom_main.jpg" width="948" height="632" />
+		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/custom_main.jpg" />
 	</div>
 	<ul class="technologies">
 		<li class="css">CSS</li>
@@ -81,10 +81,10 @@
 <div class="site-container">
 	<h2>Streamline Training Log</h2>
 	<h4>Objective</h4>
-	<a href="http://streamline.finisinc.com" class="btn dark">Visit</a>	
+	<a href="http://streamline.finisinc.com" class="btn dark">Visit</a>
 	<p>Data visualizations and workout management for athletes using FINIS proprietary performance monitors: Swimsense® and HydroTracker® GPS.</p>
 	<div class="post-image-container">
-		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/streamline_main.jpg" width="948" height="632" />
+		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/streamline_main.jpg" />
 	</div>
 	<ul class="technologies">
 		<li class="css">CSS</li>
@@ -97,10 +97,10 @@
 <div class="site-container">
 	<h2>Jason Dunford</h2>
 	<h4>Objective</h4>
-	<a href="http://jasondunford.com" class="btn dark">Visit</a>	
+	<a href="http://jasondunford.com" class="btn dark">Visit</a>
 	<p>Athlete profile site for Jason Dunford, an elite Olympic swimmer from Kenya, prior to the 2012 London Olympics. Jason's social media and blogging presence are strongly featured.</p>
 	<div class="post-image-container">
-		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/jason_main.jpg" width="948" height="632" />
+		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/jason_main.jpg" />
 	</div>
 	<ul class="technologies">
 		<li class="css">CSS</li>
@@ -114,11 +114,11 @@
 <div class="site-container">
 	<h2>3 Bullets</h2>
 	<h4>Objective</h4>
-	<a href="http://www.3bullets.net" class="btn dark">Visit</a>	
-	
+	<a href="http://www.3bullets.net" class="btn dark">Visit</a>
+
 	<p>Built in a 2-day hackathon, 3 Bullets allows you to incentivize others to help you get information distilled down to its most important points.</p>
 	<div class="post-image-container">
-		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/3bullets_main.jpg" width="948" height="632" />
+		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/3bullets_main.jpg" />
 	</div>
 	<ul class="technologies">
 		<li class="css">CSS</li>
@@ -132,10 +132,10 @@
 <div class="site-container">
 	<h2>OptiFridge</h2>
 	<h4>Objective</h4>
-	<a href="http://www.optifridge.com" class="btn dark">Visit</a>	
+	<a href="http://www.optifridge.com" class="btn dark">Visit</a>
 	<p>Have you ever forgot about some food in your fridge and found it spoiled and moldy weeks later? Optifridge helps you catalog your current food inventory and allows you to upload your store receipts for automatic entry!</p>
 	<div class="post-image-container">
-		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/optifridge_main.jpg" width="948" height="632" />
+		<img src="<?php bloginfo('template_directory'); ?>/images/my-work/optifridge_main.jpg" />
 	</div>
 	<ul class="technologies">
 		<li class="css">CSS</li>

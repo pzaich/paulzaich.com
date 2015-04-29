@@ -10,20 +10,9 @@
 		}
 	?>
 	</ul>
-	
-	
-	<h2>Photo Albums</h2>
-	
-	<?php if (is_category()): ?>
-	
-	  <ul class="album">
-	<?php wp_list_categories('&title_li=&show_count=1&child_of=19'); ?>
-	  </ul>
-	<?php endif; ?>
-	
 
-    <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets')) : else : ?>
-    	        
+  <?php if (function_exists('dynamic_sidebar') && dynamic_sidebar('Sidebar Widgets')) : else : ?>
+
 	<?php endif; ?>
 
 </div>

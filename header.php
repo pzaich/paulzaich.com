@@ -16,6 +16,7 @@
 
 	<?php if (is_search()) { ?>
 	<meta name="robots" content="index, follow" />
+	<meta content='width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0' name='viewport'>
 	<?php } ?>
 
 	<title>
@@ -118,46 +119,36 @@
 	<div class="wrapper">
 		<div class="content-wrapper">
 			<div id="header">
-				<a class="logo" href="<?php bloginfo('url') ?>"><span>Z</span></a>
-				<nav>
-			    	<ul class="navbar">
-			    		<li<?php
-			    				//$cat_args= array(
-			    					//'child_of' => 19,
-			    					 //'order' => 'ASC'
-			    				//$photo_categories = get_categories ($cat_args);
-			    		        if (is_category('blog') || in_category('blog') )
-			    		        {
-			    		        echo " class=\"current\"";
-			    		        }?>>
-			    		        <a  href="/blog">Blog</a>
-			    		</li>
-			    		<li<?php
-			    		        if (is_page('my-work'))
-			    		        {
-			    		        echo " class=\"current\"";
-			    		        }?>>
-			    		        <a href="<?php bloginfo('url') ?>/my-work/">Work</a>
-			    		</li>
+				<div class="content-inner-wrapper">
+					<a class="logo" href="<?php bloginfo('url') ?>"><span>Z</span></a>
+					<nav>
+				    	<ul class="navbar">
+				    		<li<?php
+				    		        if (is_category('blog') || in_category('blog') )
+				    		        {
+				    		        echo " class=\"current\"";
+				    		        }?>>
+				    		        <a  href="/blog">Blog</a>
+				    		</li>
+				    		<li<?php
+				    		        if (is_page('my-work'))
+				    		        {
+				    		        echo " class=\"current\"";
+				    		        }?>>
+				    		        <a href="<?php bloginfo('url') ?>/my-work/">Work</a>
+				    		</li>
 
-			        	<li <?php
-
-				                if (is_category('photography') || in_category('photography') )
-				                {
-				                echo " class=\"current\"";
-				                }?>>
-				                <a  href="/photography/">Photography</a>
-				        </li>
-
-			            <li<?php
-			                    if (is_page('about-me'))
-			                    {
-			                    echo " class=\"current\"";
-			                    }?>>
-			                    <a href="<?php bloginfo('url') ?>/about-me/">About Me</a>
-			            </li>
-			        </ul>
-			   </nav>
+				        	<li <?php
+		                if (is_category('photography') || in_category('photography') )
+		                {
+		                echo " class=\"current\"";
+		                }?>
+					        >
+					                <a  href="/photography/">Photography</a>
+					        </li>
+				        </ul>
+				   </nav>
+				</div>
 			</div>
 
 <div class="content-inner-wrapper <?php if(is_front_page()) : echo 'home'; endif; ?>" id="<?php if(is_front_page()) : echo 'home'; endif; ?>">
