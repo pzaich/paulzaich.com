@@ -8,9 +8,8 @@
 <?php endif; ?>
 <?php if($post->post_content !="") : ?>
 	<div class="entry-container">
-		<div class="triangle-comment"></div>
 		<div class="entry-content <?php if (yapb_is_photoblog_post()): echo 'photo'; endif; ?>">
-			<h3>Description</h3>
+			<h5>Description</h5>
 			<?php the_content(); ?>
 		</div>
 	</div>

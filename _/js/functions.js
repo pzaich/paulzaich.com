@@ -17,6 +17,10 @@ $(document).ready(function (){
 		e.preventDefault();
 	});
 
+	// force post images to use max-width
+	$('.post-image-container img').removeAttr('height').removeAttr('width');
+	$('.archive-photo img').removeAttr('height').removeAttr('width');
+	$('.post img').removeAttr('height').removeAttr('width');
 
 	$('article .post-image-container img').toggle(
 		function() {
@@ -45,10 +49,10 @@ var pz = {
 				var color = $.Color(colorHex);
 				var newColor;
 
-				if (color.hue() < 3) {
+				if (color.hue() < 7) {
 					newColor = color.hue(359);
 				} else {
-					newColor = color.hue(color.hue() - 3);
+					newColor = color.hue(color.hue() - 7);
 				}
 
 				newColorHexes.push(newColor.toHexString());

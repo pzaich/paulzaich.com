@@ -1,5 +1,6 @@
 <div id="sidebar">
-  <h2>Photo Albums</h2>
+  <?php include (TEMPLATEPATH . '/_/inc/_me.php' ); ?>
+  <h4>Photo Albums</h4>
 
   <?php if (is_category()): ?>
 

@@ -2,7 +2,7 @@
     /* Template Name: new homepage */
     get_header();
     $page = get_query_var( 'page' );
-  	$args = array( 'posts_per_page' => '2', 'cat' => '141', 'paged' => $page );
+  	$args = array( 'posts_per_page' => '5', 'cat' => '141', 'paged' => $page );
   	$query = new WP_Query( $args );
 
 ?>
@@ -27,6 +27,6 @@
 				wp_reset_postdata();
 	?>
 
-	<?php include (TEMPLATEPATH . '/_/inc/nav.php' ); ?>
+	<a href="/blog">More >></a>
 </div>
 <?php get_footer(); ?>
