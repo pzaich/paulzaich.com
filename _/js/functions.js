@@ -49,10 +49,10 @@ var pz = {
 				var color = $.Color(colorHex);
 				var newColor;
 
-				if (color.hue() < 7) {
+				if (color.hue() < 13) {
 					newColor = color.hue(359);
 				} else {
-					newColor = color.hue(color.hue() - 7);
+					newColor = color.hue(color.hue() - 13);
 				}
 
 				newColorHexes.push(newColor.toHexString());
