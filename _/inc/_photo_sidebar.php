@@ -1,4 +1,4 @@
-<div id="sidebar mobile-hidden">
+<div id="sidebar" class="mobile-hidden">
   <?php include (TEMPLATEPATH . '/_/inc/_me.php' ); ?>
   <h4>Photo Albums</h4>
 
