@@ -7,4 +7,8 @@
   <p>
     I live in San Francisco, CA with my lovely wife <a href="http://erinzaich.com">Erin</a> and our son Bennett. You can find me surfing at Ocean Beach in my spare time.
   </p>
+  <p>
+    <div><a href="https://twitter.com/pzaich">Twitter</a></div>
+    <div><a href="https://github.com/pzaich">Github</a></div>
+  </p>
 </section>

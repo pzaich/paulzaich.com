@@ -6,7 +6,9 @@
   	$query = new WP_Query( $args );
 
 ?>
-<?php get_sidebar(); ?>
+<div class='mobile-hidden'>
+  <?php get_sidebar(); ?>
+</div>
 <div class="main-col">
 	<?php if ($query->have_posts()) : while ($query->have_posts()) : $query->the_post(); ?>
 

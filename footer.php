@@ -1,4 +1,7 @@
 </div>
+<div class="desktop-hidden">
+  <?php include (TEMPLATEPATH . '/sidebar.php' ); ?>
+</div>
 <div class="clear"></div>
 	</div>
 </div>

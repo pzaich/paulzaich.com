@@ -2,7 +2,9 @@
     /* Template Name: Recent Work */
     get_header();
 ?>
-<?php get_sidebar(); ?>
+<div class='mobile-hidden'>
+	<?php get_sidebar(); ?>
+</div>
 <section class="main-col">
 	<div class="site-container">
 		<h3>Medical Ambassadors International Online Curriculum</h3>

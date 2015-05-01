@@ -1,5 +1,7 @@
 <?php get_header(); ?>
-	<?php get_sidebar(); ?>
+	<div class='mobile-hidden'>
+		<?php get_sidebar(); ?>
+	</div>
 	<div class="main-col">
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 

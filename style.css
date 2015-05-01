@@ -1111,6 +1111,11 @@ a { text-decoration: none; color: black; }
 
 /*Mobile browsers*/
 
+@media(min-width: 768px) {
+	.desktop-hidden {
+		display: none;
+	}
+}
 
 @media (max-width: 767px) {
 	#header{

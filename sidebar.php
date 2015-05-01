@@ -1,5 +1,4 @@
 <div id="sidebar">
-	<div class="mobile-hidden">
 	<?php include (TEMPLATEPATH . '/_/inc/_me.php' ); ?>
 		<section>
 			<h4>Recent Posts</h4>
@@ -22,6 +21,4 @@
 			</section>
 
 		<?php } ?>
-	</div>
-
 </div>

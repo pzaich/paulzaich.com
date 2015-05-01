@@ -1,5 +1,7 @@
 <?php get_header(); ?>
-		<?php get_sidebar(); ?>
+		<div class='mobile-hidden'>
+			<?php get_sidebar(); ?>
+		</div>
 		<div class="floatleft main-col">
 			<?php if (have_posts()) : ?>
 
