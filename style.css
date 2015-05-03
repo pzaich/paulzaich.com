@@ -783,8 +783,8 @@ article.page .entry-content img{
 article.page .entry-content img{
 }
 
-.entry-content a {}
-.entry-content a:hover { background: none; color: #333; text-decoration: none;
+.entry-content a {
+	text-decoration: underline;
 }
 
 .entry-content li{
