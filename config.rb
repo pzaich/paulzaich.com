@@ -15,6 +15,9 @@ activate :blog do |blog|
 end
 activate :directory_indexes
 
+proxy '/blog.html', 'index.html'
+
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -23,7 +26,7 @@ activate :directory_indexes
 #  which_fake_page: "Rendering a fake page with a local variable" }
 
 
-# Dir.entries('source/legacy_blog').each do |entry|
+# Dir.entries('source/legacy_b  log').each do |entry|
 #   # puts entry
 #   if File.file?("source/legacy_blog/#{entry}")
 #     puts ' ----------'
