@@ -1,19 +1,119 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-  <head>
-    <meta content="IE=edge" http-equiv="X-UA-Compatible">
-    <meta charset="utf-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<head data-template-set="html5-reset-wordpress-theme" id="www.paulzaich.com" profile="http://gmpg.org/xfn/11">
+  <meta charset="UTF-8"><!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame -->
+  <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+  <title><%= current_page.data.title || "Middleman" %></title>
+  <meta content=" &lt;p&gt;I&#8217;m passionate about all facets of web application development.&lt;/p&gt;" name="description">
+  <meta content="eDHIEsLlUK1d1lsqIQPoCa2eBWhVdKsWnpSqSXWdLoY" name="google-site-verification">
+  <meta content="Paul Zaich" name="author">
+  <meta content="Copyright Paul Zaich 2011. All Rights Reserved." name="Copyright">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+  <link href="http://www.paulzaich.com/wp-content/themes/pz2015/_/img/favicon.ico" rel="shortcut icon"><!-- This is the traditional favicon.
+     - size: 16x16 or 32x32
+     - transparency is OK
+     - see wikipedia for info on browser support: http://mky.be/favicon/ -->
+  <link href="http://www.paulzaich.com/wp-content/themes/pz2015/_/img/apple-touch-icon.png" rel="apple-touch-icon"><!-- The is the icon for iOS's Web Clip.
+     - size: 57x57 for older iPhones, 72x72 for iPads, 114x114 for iPhone4's retina display (IMHO, just go ahead and use the biggest one)
+     - To prevent iOS from applying its styles to the icon name it thusly: apple-touch-icon-precomposed.png
+     - Transparency is not recommended (iOS will put a black BG behind the icon) -->
+  <%= stylesheet_link_tag "site" %><!-- all our JS is at the bottom of the page, except for Modernizr. -->
 
-    <!-- Use title if it's in the page YAML frontmatter -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+  <%= javascript_include_tag "modernizr-1.7.min" %>
+  <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
+</head>
+<body class="<%= page_classes %>">
+  <div class="wrapper">
+    <div class="content-wrapper">
+      <div id="header">
+        <div class="content-inner-wrapper">
+          <a class="logo" href="/"><span>Z</span></a>
+        </div>
+      </div>
+      <div class="content-inner-wrapper home" id="home">
+        <div class='mobile-hidden'>
+          <div id="sidebar">
+            <section>
+              <img alt="Me" class="sidebar-img" src="http://www.paulzaich.com/wp-content/themes/pz2015/images/me.jpg">
+              <h4>Hi there!</h4>
+              <p>I'm Paul Zaich. Software Engineer <a href="http://www.learnup.com/">@Learnup</a>. Formerly co-founder <a href="https://workhands.us">@workhands</a>. Also <a href="https://www.25x50swim.com/">25x50</a>. I'm passionate about using technology to empower labor.</p>
+              <p>I live in San Francisco, CA with my lovely wife <a href="http://erinzaich.com">Erin</a> and our children Bennett and Delphine. You can find me surfing at Ocean Beach in my spare time.</p>
+              <p></p>
+              <div>
+                <a href="https://twitter.com/pzaich">Twitter</a>
+              </div>
+              <div>
+                <a href="https://github.com/pzaich">Github</a>
+              </div>
+              <p></p>
+            </section>
+            <section>
+              <h4>Recent Posts</h4>
+              <ul>
+                <% blog.articles[0...3].each do |article| %>
+                  <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+                <% end %>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="main-col">
+          <h1><%= current_page.data.title %></h1>
+          <%= yield %>
+        </div>
+        <div class="desktop-hidden">
+          <div id="sidebar">
+            <section>
+              <img alt="Me" class="sidebar-img" src="http://www.paulzaich.com/wp-content/themes/pz2015/images/me.jpg">
+              <h4>Hi there!</h4>
+              <p>I'm Paul Zaich. Software Engineer <a href="http://www.learnup.com/">@Learnup</a>. Formerly co-founder <a href="https://workhands.us">@workhands</a>. Also <a href="https://www.25x50swim.com/">25x50</a>. Currently coding in Ruby, Javascript and Swift and on occasion prototyping in Sketch.</p>
+              <p>I live in San Francisco, CA with my lovely wife <a href="http://erinzaich.com">Erin</a> and our son Bennett. You can find me surfing at Ocean Beach in my spare time.</p>
+              <p></p>
+              <div>
+                <a href="https://twitter.com/pzaich">Twitter</a>
+              </div>
+              <div>
+                <a href="https://github.com/pzaich">Github</a>
+              </div>
+              <p></p>
+            </section>
+            <section>
+              <h4>Recent Posts</h4>
+              <ul>
+                <% blog.articles[0...3].each do |article| %>
+                  <li><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></li>
+                <% end %>
+              </ul>
+            </section>
+          </div>
+        </div>
+        <div class="clear"></div>
+      </div>
+    </div>
+    <div id="footer-wrapper">
+      <div id="footer-inner-wrapper">
+        <footer class="source-org vcard copyright" id="footer">
+          <div id="contact-holder">
+            <div class="clear"></div>
+          </div><small>&copy;2017 Paul Zaich</small> <i class="icon-github"></i>
+        </footer>
+      </div>
+    </div><!-- here comes the javascript -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-17353369-1']);
+      _gaq.push(['_trackPageview']);
 
-    <%= stylesheet_link_tag "site" %>
-    <%= javascript_include_tag "site" %>
-  </head>
-
-  <body class="<%= page_classes %>">
-    <%= yield %>
-  </body>
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js?ver=4.5.6' type='text/javascript'>
+    </script>
+    <script src="https://code.jquery.com/color/jquery.color-2.1.2.min.js">
+    </script> <%= javascript_include_tag "site" %>
+  </div>
+</body>
 </html>
