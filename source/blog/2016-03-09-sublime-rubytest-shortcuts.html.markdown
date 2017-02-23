@@ -4,6 +4,7 @@ date: '2016-03-09 16:13:26'
 tags:
 - blog
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2016/03/09/blog/ruby-rails/sublime-rubytest-shortcuts/
 ---
 

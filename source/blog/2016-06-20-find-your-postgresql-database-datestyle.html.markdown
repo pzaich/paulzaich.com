@@ -8,7 +8,6 @@ link: http://www.paulzaich.com/2016/06/20/blog/find-your-postgresql-database-dat
 
 Sometimes you need to find the expected format of dates in your PostgreSQL database. You can find the database's default style using your psql console:
 
-
 ###Log into the postgresql console
 `psql`
 
