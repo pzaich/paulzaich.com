@@ -12,6 +12,8 @@ page '/*.txt', layout: true
 activate :blog do |blog|
   blog.permalink = "blog/{year}/{category}/{title}.html"
   blog.sources = '/blog/{year}-{month}-{day}-{title}.html'
+  blog.paginate = true
+  blog.per_page = 5
 end
 activate :directory_indexes
 
@@ -24,21 +26,6 @@ proxy '/blog.html', 'index.html'
 # Proxy pages (http://middlemanapp.com/basics/dynamic-pages/)
 # proxy "/this-page-has-no-template.html", "/template-file.html", locals: {
 #  which_fake_page: "Rendering a fake page with a local variable" }
-
-
-# Dir.entries('source/legacy_b  log').each do |entry|
-#   # puts entry
-#   if File.file?("source/legacy_blog/#{entry}")
-#     puts ' ----------'
-#     file = File.read("source/legacy_blog/#{entry}")
-#     canonical_url = file.match(/(http:\/\/www.paulzaich.com.*\/)/).captures.first
-#     canonical_url = canonical_url.gsub('http://www.paulzaich.com/', '')
-#     proxy "/#{canonical_url[0..-2]}", "legacy_blog/#{entry.gsub('.markdown','')}"
-#     # proxy '/blog/'
-#   end
-# end
-
-
 
 # General configuration
 

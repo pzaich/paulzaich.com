@@ -209,12 +209,13 @@ select, input, textarea {color: #333;}
 h1, h2, h3, h4, h5, h6 {
   font-family: YK, Times New Roman, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-weight: normal;
-  margin: 0 0 1em 0;
+  margin: .5em 0 1em 0;
 }
 
 h1{
   font-size: 48px;
-  margin: 30px 0 10px 0;
+  margin: 0 0 36px 0;
+  line-height: 1;
 }
 
 h2 { font-size: 36px;
@@ -242,7 +243,7 @@ a:hover {
   text-decoration: underline;
 }
 
-ul, ol { margin: 0 0 10px 0; }
+ul, ol { margin: 0 0 2em 0; }
 
 input[type="text"], textarea {
 
@@ -533,12 +534,7 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
 
 #footer{
   position: relative;
-}
-
-#footer-wrapper small{
-  display: block;
-  text-align: left;
-  padding-top: 20px;
+  text-align: center;
 }
 
 #footer i{
@@ -791,6 +787,7 @@ article.page .entry-content img{
 
 .sidebar-img {
   margin-bottom: 1em;
+  border-radius: 4px;
 }
 
 .navigation {
@@ -1058,25 +1055,8 @@ a { text-decoration: none; color: black; }
 }
 
 @media (max-width: 767px) {
-  #header{
-    height: auto;
-  }
-
   #header .content-inner-wrapper {
     padding: 0;
-  }
-
-  #header .logo {
-    position: absolute;
-  }
-
-  #header nav a:hover{
-    background: none;
-  }
-
-  #header nav{
-    float: none;
-    margin: 0;
   }
 
   #sidebar {
@@ -1084,6 +1064,7 @@ a { text-decoration: none; color: black; }
     width: auto;
     padding: 0 2.5em;
   }
+
   .main-col {
     float: none;
     width: auto;

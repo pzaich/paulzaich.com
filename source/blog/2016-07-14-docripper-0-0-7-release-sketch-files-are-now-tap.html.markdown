@@ -22,11 +22,11 @@ A brand-new version of
 ###Notes
 
 
-***.sketch**
+1. ***.sketch**
  files are now supported! All text content (text labels, artboard labels and layer labels) are returned as a concatenated string. I've kept the parsing simple to avoid breaking changes and conform to the spirit of DocRipper's mission to simply grab text from files.
 
 
-*Cleans up module namespacing internally
+2. *Cleans up module namespacing internally
 
 
 ###Parsing Sketch Files
