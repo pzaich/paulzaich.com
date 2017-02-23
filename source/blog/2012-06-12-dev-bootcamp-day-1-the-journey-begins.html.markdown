@@ -6,24 +6,25 @@ tags:
 - incrementer
 - ruby
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2012/06/12/blog/ruby-rails/dev-bootcamp-day-1-the-journey-begins/
 ---
 
-Day 1 is coming to a close here at 
+Day 1 is coming to a close here at
 [Dev Bootcamp](http://devbootcamp.com/) and the program has already succeeded in surpassing my expectations. The amount of energy and positivity in the room is invigorating. Many of the students quit their current successful careers to "start over" and their passion shows. Shereef and the rest of the team brought an incredible amount of energy and attention to detail to the first 3 hours of the course as they got the 40 students introduced to each and acquainted us all with the ground rules of our journey over the next 10 weeks. Within just a few hours I already felt like I knew most of the class and we dove straight into some coding in the afternoon.
 
-[caption id="attachment_384" align="aligncenter" width="560"]
-[![](http://www.paulzaich.com/wp-content/uploads/2012/06/photo-4-560x418.jpg)](http://www.paulzaich.com/2012/06/12/ruby-rails/dev-bootcamp-day-1-the-journey-begins/attachment/photo-4/) Shereef inspiring the troops[/caption]
+![](http://www.paulzaich.com/wp-content/uploads/2012/06/photo-4-560x418.jpg)](http://www.paulzaich.com/2012/06/12/ruby-rails/dev-bootcamp-day-1-the-journey-begins/attachment/photo-4/)
+Shereef inspiring the troops[/caption
 
 Shereef gave several inspiring but brief talks about the goals of Dev Bootcamp and what were should be trying to achieve over the next ten weeks:*Don't become a code monkey. Strive to become a true architect. Someone that can craft a truly inspired design and implement it.
 
-	
+
 *The effectiveness of the  learning environment is truly contingent on the support structure around you.
 
-	
+
 *You need to be as close to being overwhelmed with new learning that will push you without hitting the panic point
 
-	
+
 *Your classmates and teachers are the critical support that will help you stay in this optimal place of learning.
 Shereef sent us straight into the thick of it in the afternoon with a review of Ruby core concepts. I was paired with Ivan and we got started on the material. I have to admit that I was apprehensive about Pair programming, but I came away with a very positive experience. Ivan and I were able to correct each others errors much more quickly than if we had been working separately and I appreciated seeing his coding style and his though process.
 

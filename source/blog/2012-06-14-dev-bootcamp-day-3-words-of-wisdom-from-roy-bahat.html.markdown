@@ -6,6 +6,7 @@ tags:
 - roy-bahat
 - ruby
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2012/06/14/blog/ruby-rails/dev-bootcamp-day-3-words-of-wisdom-from-roy-bahat/
 ---
 
@@ -13,8 +14,8 @@ link: http://www.paulzaich.com/2012/06/14/blog/ruby-rails/dev-bootcamp-day-3-wor
 
 *Software engineers are hard to come by. True Story: Roy has personally called perspective entry-level engineers to try to get them to pick IGN over their other offers.
 
-	
+
 *The education system is teaching engineers the wrong things. Software engineering should be less science and more building. Building is fun. Learning rules and constraints are not.
 
-	
+
 *Roy visualizes a resume-less world where engineers are hired purely based off of their code and fit with the company

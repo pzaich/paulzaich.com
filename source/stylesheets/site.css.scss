@@ -324,12 +324,24 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
   padding: 0 0px 20px 0px;
 }
 
+
+// Layout
+
 .main-col {
   float: left;
   width: 75%;
   padding: 0 0.5em;
   padding-left: 6.5em;
   margin-top: 40px;
+
+  p a {
+    border-bottom: 3px solid #1EF2B4;
+
+    &:hover {
+      text-decoration: none;
+      border-color: darken(#1EF2B4, 10%);
+    }
+  }
 }
 
 #header{
@@ -359,6 +371,7 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
   border-bottom-right-radius: 3px;
   background-color: white;
   border: 1px solid rgba(0,0,0,0.2);
+  border-top: 0;
   text-decoration: none;
   display: block;
   width: 60px;

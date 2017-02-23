@@ -6,6 +6,7 @@ tags:
 - facebook
 - marketing
 - targeting
+category: marketing
 link: http://www.paulzaich.com/2012/09/04/blog/marketing/facebooks-ad-targeting-isnt-that-smart-what/
 ---
 

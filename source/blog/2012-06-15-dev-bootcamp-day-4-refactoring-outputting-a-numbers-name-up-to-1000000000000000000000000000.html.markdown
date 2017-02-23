@@ -6,12 +6,13 @@ tags:
 - recursion
 - ruby
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2012/06/15/blog/ruby-rails/dev-bootcamp-day-4-refactoring-outputting-numbers-name/
 ---
 
 Today provided to hold some of the biggest challenges yet and yielded some of the most satisfying moments yet for me during Dev Bootcamp.
 
-My favorite quote of the day came from 
+My favorite quote of the day came from
 [Robert](http://knowledgepile.net/), who did a code review for the class on Ivan's and my method for the
 [Pig Latin!](http://www.paulzaich.com/2012/06/12/ruby-rails/dev-bootcamp-day-1-the-journey-begins/) exercise:>RegEx (Regular Expresssions) is like CTRL + F (Find) on crack.
 

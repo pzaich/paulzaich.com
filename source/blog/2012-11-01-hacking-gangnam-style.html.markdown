@@ -12,6 +12,7 @@ tags:
 - ruby-on-rails
 - startups
 - zoyi
+category: ruby-rails
 link: http://www.paulzaich.com/2012/11/01/blog/ruby-rails/hackathon-south-korea/
 ---
 

@@ -10,7 +10,8 @@ page '/*.json', layout: false
 page '/*.txt', layout: true
 
 activate :blog do |blog|
-  blog.permalink = "blog/{year}/{category}/{title}.html"
+  # category should include /
+  blog.permalink = "{year}/{month}/{day}/blog/{category}/{title}.html"
   blog.sources = '/blog/{year}-{month}-{day}-{title}.html'
   blog.paginate = true
   blog.per_page = 5

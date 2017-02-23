@@ -7,6 +7,7 @@ tags:
 - ruby
 - ruby-rails
 - sudoku
+category: ruby-rails
 link: http://www.paulzaich.com/2012/06/25/blog/ruby-rails/dev-bootcamp-days-10-11-plunging-object-oriented-programming/
 ---
 
@@ -19,7 +20,7 @@ The number one rule for me has been to think about the 
 [caption id="attachment_457" align="aligncenter" width="560"]
 ![](http://www.paulzaich.com/wp-content/uploads/2012/06/4504469260_43ea697e9d_b-560x420.jpg) http://www.flickr.com/photos/the-consortium/4504469260/[/caption]
 
-Today was our biggest challenge yet: Create a Sudoku Puzzle solver. To be honest, I was a little intimidated when were were assigned this problem. The puzzle was clearly going to require the most advanced algorithm work yet and would also test my understanding of Object Oriented design. 
+Today was our biggest challenge yet: Create a Sudoku Puzzle solver. To be honest, I was a little intimidated when were were assigned this problem. The puzzle was clearly going to require the most advanced algorithm work yet and would also test my understanding of Object Oriented design.
 [Brett](http://brettcamarda.com/) and I teamed up and did a thorough job of trying to has through all the steps required to solve the puzzle and where each of these methods should exist. The toughest piece turned out to be figuring out how to parse the number sets in the grid into different arrays for the columns, rows and 9-number sub-grids. We were able to use 3 classes, a GameBoard class, a Container class (for the cols, rows and sub-grids) and a Cell class to define the dynamics of the game board. We checked each cell for the overlapping values in it's row, column and sub-grid and subtracted this combined array from the possible values [1..9]. Turns out that this will work for phase 1 of the project and will only solve simple Sudoku!
 
 On to phase 2 tomorrow where we will need to develop a recursive method with branching that allows the algorithm to guess the value of the cell when more than one possible value still exists.

@@ -6,6 +6,7 @@ tags:
 - rake
 - ruby
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2013/06/10/blog/ruby-rails/env-vars-a-better-way-to-pass-arguments-to-rake-tasks-in-rails/
 ---
 

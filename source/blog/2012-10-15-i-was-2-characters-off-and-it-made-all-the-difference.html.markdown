@@ -4,6 +4,7 @@ date: '2012-10-15 19:57:23'
 tags:
 - blog
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2012/10/15/blog/ruby-rails/i-was-2-characters-off-and-it-made-all-the-difference/
 ---
 

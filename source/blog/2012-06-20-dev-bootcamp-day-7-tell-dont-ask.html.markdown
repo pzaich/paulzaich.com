@@ -7,6 +7,7 @@ tags:
 - methods
 - ruby
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2012/06/20/blog/ruby-rails/dev-bootcamp-day-7-tell-dont-ask/
 ---
 

@@ -7,17 +7,18 @@ tags:
 - ruby
 - ruby-rails
 - tdd
+category: ruby-rails
 link: http://www.paulzaich.com/2012/06/28/blog/ruby-rails/dev-bootcamp-day-14-wading-waters-tdd/
 ---
 
-The deep, shark-infested waters of RSpec, tests and TDD are finally upon us. As I mentioned 
+The deep, shark-infested waters of RSpec, tests and TDD are finally upon us. As I mentioned
 [yesterday](http://www.paulzaich.com/2012/06/27/ruby-rails/dev-bootcamp-day-13-red-green-refactor/), I was still grappling with the how to think in a TDD mindset and see how this would yield productive code. I think today's coding sessions were helpful in beginning to understand how TDD and RSpec testing can be useful in becoming a more disciplined and productive coder.
 
 TDD is all about writing as little code to get the test spec to pass. One thing I didn't really 
 get until today after Shereef had beaten it in to my head several times, is that it turns out that you should reallly try to write code that breaks the tests by writing a minimal amount of code. If you can get a test to pass without actually writing want to you want your app to do, your tests are not specific enough and probably are testing the right things.
 
 [caption id="attachment_487" align="aligncenter" width="500"]
-![](http://www.paulzaich.com/wp-content/uploads/2012/06/5446692740_c4d23dd3e9.jpg) Photo Credit: 
+![](http://www.paulzaich.com/wp-content/uploads/2012/06/5446692740_c4d23dd3e9.jpg) Photo Credit:
 [http://www.flickr.com/photos/magnusbrath/5446692740/](http://www.flickr.com/photos/magnusbrath/5446692740/)[/caption]
 
 The morning consisted of trying to rebuild the now infamous Todo app, this time focusing purely on making each test pass. I found it very frustrating and not very helpful, though it definitely helped improve my syntax and experience with writing RSpec. More than anything, I think the exercise proved to me that YOU DO NOT WRITE YOUR TESTS AFTER WRITING YOUR CODE. The RSPEC tests that we were working off of yesterday were full of holes that would not have been there if it had been coded sequentially using a TDD approach. Filling in the gaps afterwords is just too hard.

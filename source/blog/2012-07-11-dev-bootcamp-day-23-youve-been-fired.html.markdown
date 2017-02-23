@@ -6,6 +6,7 @@ tags:
 - ruby
 - ruby-rails
 - sinatra
+category: ruby-rails
 link: http://www.paulzaich.com/2012/07/11/blog/ruby-rails/dev-bootcamp-day-23-youve-fired/
 ---
 

@@ -7,6 +7,7 @@ tags:
 - kaminari
 - ruby-rails
 - ruby-on-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2012/11/13/blog/ruby-rails/fix-bootstrap-styling-for-pagination-with-kaminari/
 ---
 

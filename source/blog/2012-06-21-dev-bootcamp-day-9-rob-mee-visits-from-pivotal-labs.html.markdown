@@ -6,10 +6,11 @@ tags:
 - pivotal
 - rob-mee
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2012/06/21/blog/ruby-rails/dev-bootcamp-day-9-wax-on-wax-off/
 ---
 
-Tonight we were privileged to hear from the founder of Pivotal Labs, which among other things is known for its dedication to Pair Programming. Rob Mee's summed up his talk by emphasizing that over the next ten weeks, we should get really good at the 
+Tonight we were privileged to hear from the founder of Pivotal Labs, which among other things is known for its dedication to Pair Programming. Rob Mee's summed up his talk by emphasizing that over the next ten weeks, we should get really good at the
 basics. Become a "world-class beginner". Rob used the analogy of the Karate Kid "wax on, wax off" to illustrate his view of how programming skill must be developed. If you understand the fundamentals of programming really well, you will be able to learn effectively as you go.
 
 [caption id="attachment_446" align="aligncenter" width="560"]
@@ -23,22 +24,22 @@ On the side, I finished up in the morning a custom Inject method to work on unde
 module Enumerable
   def new_inject(*initial_value)
     loaded_array = []
-    
+
     #change to Ranges to Array
     if self.class == Range
       loaded_array = self.to_a
     else
       loaded_array = self
     end
-    
+
     #Load an initial value passed in into the array
-    if initial_value != [] 
+    if initial_value != []
       initial_value = initial_value.first
     else
       initial_value = loaded_array.first
-      loaded_array = loaded_array[1..loaded_array.length-1] 
+      loaded_array = loaded_array[1..loaded_array.length-1]
     end
-    
+
     #increment initial_value
     loaded_array.each_with_index do |value, index|
       initial_value = yield(initial_value, value)

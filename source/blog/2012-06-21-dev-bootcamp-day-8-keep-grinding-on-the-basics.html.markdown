@@ -7,13 +7,14 @@ tags:
 - javascript
 - js
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2012/06/21/blog/ruby-rails/dev-bootcamp-day-8-keep-grinding-basics/
 ---
 
-Today was a day full of finishing up outstanding projects and trying to review core Ruby concepts before jumping forward again into another larger Ruby project. We didn't really get into coding until after lunch. 
+Today was a day full of finishing up outstanding projects and trying to review core Ruby concepts before jumping forward again into another larger Ruby project. We didn't really get into coding until after lunch.
 [David](http://realdlee.com/) and I finished up our merchantjs app which parsed through CSV data and ran through a few of the remaining student compiled exercises on Socrates. We spent about 45 minutes looking into a side project that involves authenticating a user on popular social media applications like Twitter, Tumblr and LinkedIn via their API's. We didn't make a whole lot of progress other than identifying which gems might be useful for the project. I'm hoping to return to this later so I can start to understand authentication more fully.
 
-After class, a bunch of folks stuck around to work on Javascript and we ended up working on the Week 5 assignment which was to make a simple chat client interface by using a couple of different function calls that were provided to us. It should look like 
+After class, a bunch of folks stuck around to work on Javascript and we ended up working on the Week 5 assignment which was to make a simple chat client interface by using a couple of different function calls that were provided to us. It should look like
 [this](http://codeclasschat.herokuapp.com/).
 
 

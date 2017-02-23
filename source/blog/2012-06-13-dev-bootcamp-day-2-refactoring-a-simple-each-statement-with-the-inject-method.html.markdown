@@ -8,10 +8,11 @@ tags:
 - loops
 - ruby
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2012/06/13/blog/ruby-rails/boot-camp-day-2-refactoring-a-simple-each-statement-with-the-inject-method/
 ---
 
-Yesterday I paired up with 
+Yesterday I paired up with
 [Brick](http://bootify.tumblr.com) (who is also our Yoga instructor!)  to finish up Arrays in the Ruby Intro module in Socrates. The last exercise had us working on a simple factorial method in which a positive integer  could be passed in and the factorial would be returned.
 
 We used a simple each statement initially to solve the problem, setting up a range to list all the numbers between 1 and the number that had been passed in.
@@ -27,7 +28,7 @@ end
 product
 end
 
-We came to the realization while doing this exercise that the .each method does not return the product variable automatically. We asked 
+We came to the realization while doing this exercise that the .each method does not return the product variable automatically. We asked
 [Robert](http://knowledgepile.net/), one of the Ruby masters teaching us here, about this and he told us to check out  the .inject method because it will automatically return the result. It turns out .inject can also allow you to create an amazingly concise version of the code above. Brick and I spent the next 45 minutes diving in and here were the refactored version of the code above that we were able to come up with.
 
 It turns out that we can completely eliminate the need for the product variable with inject because the result is already assumed and passed an initial value (1 in this case).

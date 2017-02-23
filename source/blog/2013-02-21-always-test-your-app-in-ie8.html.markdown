@@ -4,6 +4,7 @@ date: '2013-02-21 01:12:04'
 tags:
 - https-cross-browser
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2013/02/21/blog/ruby-rails/https-gotcha-in-ie8/
 ---
 
@@ -12,10 +13,11 @@ I had a particularly stark reminder today of why it is still important to do cro
 
 What was that? We were loading a default html5 shim in http instead of https.
 
-
+`
 <!--[if lt IE 9]>
   <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
 <![endif]-->
+`
 
 Every time you loaded our site over SSL you would get this
 [security warning](http://blog.httpwatch.com/2009/04/23/fixing-the-ie-8-warning-do-you-want-to-view-only-the-webpage-content-that-was-delivered-securely/). Every. Single. Time.

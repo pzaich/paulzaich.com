@@ -9,10 +9,11 @@ tags:
 - ruby
 - ruby-rails
 - steve-huffman
+category: ruby-rails
 link: http://www.paulzaich.com/2012/07/25/blog/ruby-rails/application-optimization-from-steve-huffman-reddit-co-founder/
 ---
 
-It's been a crazy busy week! On top on a monstrous pile of curriculum on Rails basics, the task for the week is to build a virtual clone of 
+It's been a crazy busy week! On top on a monstrous pile of curriculum on Rails basics, the task for the week is to build a virtual clone of
 [Hacker News](http://news.ycombinator.com/). With two days of previous Rails experience, Brett and I dove in with exuberance and so far so good! Rails and it's ways of handling form parameters, ActiveRecord calls, and routing are starting to make sense and behave the way that you expect when you test them in Rails console. One thing that has quickly come up though is the design of database and its effect on application performance.
 
 Tonight I had the privilege to sit down with Steve Huffman, co-founder of Reddit, and we ended up talking about database calls for about 20 minutes after reviewing a piece of my code. In order to be able to route to the correct article after a comment in which the comments are nested, we had to setup a recursive method that runs a database call each time it cannot find the parent Article ID. It turns out that this is 

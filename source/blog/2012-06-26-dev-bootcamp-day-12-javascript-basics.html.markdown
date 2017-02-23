@@ -10,6 +10,7 @@ tags:
 - rspec
 - ruby
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2012/06/26/blog/ruby-rails/dev-bootcamp-day-12-javascript-basics/
 ---
 

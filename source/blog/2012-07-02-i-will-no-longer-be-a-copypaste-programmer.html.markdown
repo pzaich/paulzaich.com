@@ -7,6 +7,7 @@ tags:
 - learning-to-code
 - ruby
 - ruby-rails
+category: ruby-rails
 link: http://www.paulzaich.com/2012/07/02/blog/ruby-rails/i-will-longer-copypaste-programmer/
 ---
 
@@ -21,13 +22,13 @@ Take a few minutes and think about what problem you are trying to solve and what
 
 
 **Try through the documentation that applies to the problem that you are trying to solve.**
- Looking through relevant and accurate documentation such as 
-[Ruby-Docs](http://ruby-doc.org/core-1.9.3/) or 
+ Looking through relevant and accurate documentation such as
+[Ruby-Docs](http://ruby-doc.org/core-1.9.3/) or
 [JQuery](http://docs.jquery.com/Main_Page) JS library, is ultimately going to help you learn a lot more than immediately jumping on Google. Good documentation is a treasure-trove of information and I'm coming to love learning about the crazy useful methods that these libraries provide for me to use! The examples are normally clear and accurate, but are general enough that they will force you to adapt them to your own particular needs. I find this really helps me learn conceptually what I'm doing.
 
 
 **Savor the satisfaction of solving the problem. **
-Sure you want to get faster at development, but if you can learn something the first time and don't have to google it again, and again, it's probably going to save you time in the long run. Try searching for methods or functions that can help you solve your particular problem rather than the solution itself. It's tempting to cut corners and save time, but remember this is 
+Sure you want to get faster at development, but if you can learn something the first time and don't have to google it again, and again, it's probably going to save you time in the long run. Try searching for methods or functions that can help you solve your particular problem rather than the solution itself. It's tempting to cut corners and save time, but remember this is
 yourcode. Take pride in tackling your engineering challenge!
 
 I'm not saying not to use the wonderful resources out there. I'm saying that I will no longer be a copy/paste programmer that mindlessly searches, finds the correct code and drops into my own work. I want to do better for myself and for my future in programming.
