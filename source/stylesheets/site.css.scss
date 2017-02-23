@@ -250,11 +250,11 @@ input[type="text"], textarea {
 }
 
 code{
-  background: #333;
-  color: #fff;
-  padding: 10px;
+  border-radius: 2px;
+  background: #193549;
+  color: #EDF0F2;
+  padding: 16px;
   margin: 10px;
-  border: 1px solid #fff;
   display: block;
   font-size: 14px;
 }
@@ -350,7 +350,7 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
   margin: 0 auto;
 }
 
- /*Header & Navbar Styles*/
+/*Header & Navbar Styles*/
 
 #header .logo{
   font-family: YK, Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -388,77 +388,7 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
     }
 }
 
-#header nav a:hover{
-  background: none;
-}
-
-#header nav{
-  float: right;
-  margin-right: 40px;
-}
-
-.main-feature{
-  padding: 0 2%;
-  height: 482px;
-  color: #fff;
-  text-shadow: 1px 1px 3px #444;
-}
-
-.name{
-  font-size: 80px;
-}
-
-.main-feature a{
-  color: #fff;
-  text-decoration: none;
-}
-
-.main-feature a:hover{
-  background: none;
-}
-
-.btn-cont{
-  position: absolute;
-  bottom: 20px;
-}
-
-
- .examples .btn{
-  margin: 0 10px;
-  float: right;
- }
-
- .technologies li{
-  font-family: YK, sans-serif;
-  font-size: 18px;
-  float: left;
-  padding: 8px 10px;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  box-shadow: inset 0 -1px 3px #888;
-  border-radius: 3px;
-  text-transform: uppercase;
- }
-
- .technologies li:hover{
-  box-shadow: inset 0 -1px 3px #888, 0px 0px 4px #fff;
- }
-
- .technologies li.rails, .technologies li.ruby{
-  color: #D90000;
- }
-
- .technologies li.css, .technologies li.haml{
-  color: #ff8000;
- }
-
- .technologies li.js{
-  color: #00008C;
- }
-
-
-
- @media screen and (max-width: 1919px) {
+@media screen and (max-width: 1919px) {
   .examples li{
     width: 280px;
   }
@@ -466,9 +396,9 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
   .examples li img{
     width: 280px;
   }
- }
+}
 
- @media screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
   .examples li{
     width: 210px;
   }
@@ -476,59 +406,7 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
   .examples li img{
     width: 210px;
   }
-
- }
-
-
- /*My Work*/
- .site-container{
-  position: relative;
-  z-index: 20;
-  overflow: hidden;
-  padding-bottom: 20px;
-  background: url(images/entry_border.png) bottom left repeat-x;
- }
-
- .site-container:last-child{
-  background: none;
- }
-
- .site-container h4{
-  margin-bottom: 5px;
- }
-
- .site-container p{
-  font-size: 16px;
- }
- .site-container .technologies{
-  padding-top: 20px;
- }
-
- .site-container .btn{
-  float: right;
-  position:relative;
-  top: -40px;
- }
-
- .site-container .subfeatures {
-  padding-top: 20px;
-  overflow: hidden;
-  padding-bottom: 5px;
- }
-
- .site-container .subfeatures img{
-  background: #fff;
-  float: left;
-  display: block;
-  width: 33.333333%;
-  padding: 10px;
- }
-
- .site-container .subfeatures img.last{
-  float: right;
-  margin-right: 0;
- }
-
+}
 
 /*Footer Syles----------------------------------------------------------------------------------------------*/
 
@@ -541,215 +419,7 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
   font-family: Font-Awesome;
 }
 
-a#contact-me{
-  display: block;
-  float: right;
-  font-size: 20px;
-  text-transform: uppercase;
-  font-family: YK, Times New Roman, Helvetica Neue, Helvetica, Arial, sans-serif;
-  text-decoration: none;
-  text-align: center;
-  padding: 9px 15px 8px 15px;
-  background: #111;
-  color: #fff;
-}
-
-a#contact-me:hover, a#contact-me.active:hover {
-  border: 1px solid #333;
-  background: #fff;
-  color: #333;
-  text-shadow: none;
-}
-
-a#contact-me.active {
-  background: #fff;
-  color: #333;
-  border: 1px solid #eee;
-  position: relative;
-  z-index: 30;
-  border-top: none;
-}
-a#contact-me.active:hover {
-  border: 1px solid #eee;
-  border-top: none;
-}
-
-#contact-holder{
-  width: 320px;
-  background: #fff;
-  padding: 10px;
-  display: none;
-  position: absolute;
-  bottom: 39px;
-  z-index: 20;
-  border: 1px solid #eee;
-  right: 0;
-}
-
-#contact-holder input[type="text"]{
-  width: 100%;
-}
-
-#contact-holder textarea{
-  width: 100%;
-}
-
-#contact-holder .input-container{
-  margin: 5px;
-  position: relative;
-}
-
-#contact-holder .button{
-  margin-left: 9px;
-  margin-bottom: 5px;
-  float: left;
-}
-
-/*Contact Form----------------------------------------------------------------------------------------------*/
-#contact-holder div.wpcf7 {
-  margin: 0;
-  padding: 0;
-}
-
-#contact-holder div.wpcf7-response-output {
-  clear: both;
-  margin: 5px;
-  padding: 5px;
-}
-
-#contact-holder div.wpcf7-mail-sent-ok {
-  background-color: #398f14;
-}
-
-#contact-holder div.wpcf7-mail-sent-ng {
-  display: block;
-  font-size: 10pt;
-  padding: 2px;
-  margin: 5px 0 5px 0;
-  color: #FF0000;
-  border: 1px solid #ff0000;
-}
-
-#contact-holder div.wpcf7-spam-blocked {
-  display: block;
-  font-size: 10pt;
-  padding: 2px;
-  margin: 5px 0 5px 0;
-  color: #FF0000;
-  border: 1px solid #ff0000;
-}
-
-#contact-holder div.wpcf7-validation-errors {
-  display: block;
-  font-size: 10pt;
-  padding: 2px;
-  margin: 5px 0 5px 0;
-  color: #FF0000;
-  border: 1px solid #ff0000;
-}
-
-#contact-holder span.wpcf7-form-control-wrap {
-  position: relative;
-}
-
-#contact-holder span.wpcf7-not-valid-tip {
-  display: block;
-  font-size: 10pt;
-  padding: 2px;
-  margin: 5px 0 5px 0;
-  color: #FF0000;
-}
-
-#contact-holder span.wpcf7-not-valid-tip-no-ajax {
-  color: #f00;
-  font-size: 10pt;
-  display: block;
-}
-
-#contact-holder span.wpcf7-list-item {
-  margin-left: 0.5em;
-}
-
-#contact-holder .wpcf7-display-none {
-  display: none;
-}
-
-#contact-holder div.wpcf7 img.ajax-loader {
-  border: none;
-  vertical-align: middle;
-  margin-left: 4px;
-}
-
-#contact-holder div.wpcf7 .watermark {
-  color: #888;
-}
-
-/* And here begins the Wordpress fun.
--------------------------------------------------------------------------------*/
-
 #page-wrap {width: 960px; margin: 20px auto;}
-
-.post {
-  margin: 40px 0 80px 0;
-}
-.post:first-child {
-  margin-top: 0;
-}
-
-.entry-container{
-  margin-top: 10px;
-}
-
-/*.entry-content { padding: 20px 10px 20px 10px; position: relative;  overflow: hidden; margin-bottom: 10px; width: 600px; font-size: 14px; background: url(images/entry_border.png) bottom left repeat-x;
-}*/
-
-
-article.page .entry-content{
-  font-size: 16px;
-  /*background: rgba(0,0,0,0.15);*/
-  background: none;
-  border-radius: 3px;
-  width: 920px;
-}
-
-article.page .entry-content img{
-  margin-left: 10px;
-}
-
-article.page .entry-content img{
-}
-
-.entry-content a {
-  text-decoration: underline;
-}
-
-.entry-content li{
-  margin: 0 0 10px 0;
-}
-
-.meta {
-  font-size: 14px;
-  margin-bottom: 10px;
-}
-
-.meta span.label{
-  text-transform: uppercase;
-}
-
-.meta span.cat{
-  font-weight: bold;
-}
-
-.meta span.label.date{
-  margin-left: 30px;
-}
-
-.meta .fb_edge_widget_with_comment{
-  margin-left: 30px;
-}
-.postmetadata {}
-
-
 
 #sidebar {
   margin-top: 40px;
@@ -790,200 +460,10 @@ article.page .entry-content img{
   border-radius: 4px;
 }
 
-.navigation {
-}
-.next-posts {}
-.prev-posts {}
+// Blog Index
 
-#searchform {}
-#s {}
-#searchsubmt {}
-
-#respond{
-  margin-top: -40px;
-}
-
-/*About Page*/
-
-
-
-.wp-caption{
-  border: 1px solid #c8c8c8;
-  padding: 20px 10px 10px 10px;
-  background: rgba(255,255,255, .8);
-  margin-top: 10px;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.wp-caption p{
-  margin: 0;
-  padding-top: 10px;
-  width: auto;
-  font-style: italic;
-}
-/*COMMENTS AREA --------------------------------------------------------------------------------------------------------------------*/
-
-#comments{
-  margin-top: 20px;
-}
-
-ol.commentlist {list-style: none; position: relative;
-  margin-bottom: 40px;
-}
-ol.commentlist li {
-}
-ol.commentlist li.alt {}
-ol.commentlist li.bypostauthor {}
-ol.commentlist li.byuser {}
-ol.commentlist li.comment-author-admin {}
-ol.commentlist li.comment {margin-top: 10px;
-}
-ol.commentlist li.comment div.comment-body{background: #fff;  padding: 10px; margin-left: 20px;
-}
-ol.commentlist li.comment div.comment-author {}
-ol.commentlist li.comment div.vcard {display: inline; font-size: 14px;}
-ol.commentlist li.comment div.vcard cite.fn {font-style: normal; font-weight: bold;
-}
-ol.commentlist li.comment div.vcard cite.fn a.url {}
-ol.commentlist li.comment div.vcard img.avatar {float: left; margin: 0 10px 10px 0px;}
-ol.commentlist li.comment div.vcard img.avatar-32 {}
-ol.commentlist li.comment div.vcard img.photo {}
-ol.commentlist li.comment div.vcard span.says {}
-ol.commentlist li.comment div.commentmetadata {float: right;
-}
-ol.commentlist li.comment div.comment-meta {}
-ol.commentlist li.comment div.comment-meta a {}
-ol.commentlist li.comment p {margin: 20px 0 10px 0;}
-ol.commentlist li.comment ul {}
-ol.commentlist li.comment div.reply {float: right;}
-ol.commentlist li.comment div.reply a {font-weight: bold;}
-ol.commentlist li.comment ul.children {list-style: none; margin: 10px 0 0;}
-ol.commentlist li.comment ul.children li {}
-ol.commentlist li.comment ul.children li.alt {}
-ol.commentlist li.comment ul.children li.bypostauthor {}
-ol.commentlist li.comment ul.children li.byuser {}
-ol.commentlist li.comment ul.children li.comment {}
-ol.commentlist li.comment ul.children li.comment-author-admin {}
-ol.commentlist li.comment ul.children li.depth-2 {margin: 0 0 10px 10px;}
-ol.commentlist li.comment ul.children li.depth-3 { margin: 0 0 10px 10px;}
-ol.commentlist li.comment ul.children li.depth-4 { margin: 0 0 10px 10px;}
-ol.commentlist li.comment ul.children li.depth-5 {}
-ol.commentlist li.comment ul.children li.odd {}
-ol.commentlist li.even {}
-ol.commentlist li.odd {}
-ol.commentlist li.parent {}
-ol.commentlist li.thread-alt {}
-ol.commentlist li.thread-even {}
-ol.commentlist li.thread-odd {}
-
-#comment-user-details div{
-  padding: 8px 0 0px 0;
-}
-
-#comment-user-details input{
-  width: 100%;
-}
-
-#comment-user-details input:hover, #comment-user-details input:active, #comment-user-details textarea:hover, #comment-user-details textarea:active{
-  box-shadow: 0 3px 3px 0 #4A4A4A;
-
-}
-
-textarea#comment{
-  margin: 10px 0 10px 0;
-  height: 40px;
-  min-height: 80px;
-  width: 100%;
-}
-
-
-/*Photo Specific Styling*
--------------------------------------------------------------------------------------*/
-
-#screen {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  min-height: 100%;
-  top:  0;
-  left: 0;
-  z-index: 9000;
-  background: rgba(0,0,0, 0.9);
-}
-
-.post-image-container{
-  text-align: center;
-}
-
-.post-image-container img{
-  cursor: pointer;
-}
-
-ul.tags{
-  font-size: 14px;
-  float: left;
-  min-height: 20px;
-  position: relative;
-}
-
-ul.tags li{
-  border: 1px solid #000;
-}
-
-ul.tags li a{
-  background: rgba(0,0,0, 0.8);
-  padding: 6px 8px 6px 8px;
-  border-radius: 3px;
-
-  display: inline-block;
-  color: #fff;
-  text-decoration: none;
-}
-
-ul.tags li a:hover{
-  background: none;
-}
-
-ul.tags li:hover a{
-}
-
-ul.tags li:hover{
-  background: #fff;
-  background: -moz-linear-gradient(top, #96d166 0%, #7fc14d 50%, #96d166 100%); /* FF3.6+ */
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#96d166), color-stop(50%,#7fc14d), color-stop(100%,#96d166)); /* Chrome,Safari4+ */
-  background: -webkit-linear-gradient(top, #96d166 0%,#7fc14d 50%,#96d166 100%); /* Chrome10+,Safari5.1+ */
-  background: -o-linear-gradient(top, #96d166 0%,#7fc14d 50%,#96d166 100%); /* Opera 11.10+ */
-  background: -ms-linear-gradient(top, #96d166 0%,#7fc14d 50%,#96d166 100%); /* IE10+ */
-  background: linear-gradient(top, #96d166 0%,#7fc14d 50%,#96d166 100%); /* W3C */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#96d166', endColorstr='#96d166',GradientType=0 ); /* IE6-9 */
-  border: 1px solid #7fc14d;
-}
-
-ul h3 {
-  margin: 10px 0 0 10px;
-}
-
-ul.tags li{
-  float: left;
-  margin: 10px 10px 10px 10px;
-  border-radius: 3px;
-}
-
-/*.entry-content.photo:hover{
-  padding: 15px 5px 5px 5px;
-  border: 5px solid #f6f6f6;
-}
-
-/*Archive Pages
---------------------------------------------------------------------------------------------------------------------*/
-
-
-.archive-photo {
-
-}
-.archive-thumb {
-  margin-bottom: 20px;
+.index-article {
+  margin-bottom: 4em;
 }
 
 /* Print styles!

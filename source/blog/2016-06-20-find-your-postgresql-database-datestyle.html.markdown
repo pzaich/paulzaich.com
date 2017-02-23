@@ -10,10 +10,10 @@ Sometimes you need to find the expected format of dates in your PostgreSQL datab
 
 
 ###Log into the postgresql console
-psql
+`psql`
 
 ###connect to your database
-\connect your_database_name
+`\connect your_database_name`
 
 ###interact with your database
-show datestyle;
+`show datestyle;`
