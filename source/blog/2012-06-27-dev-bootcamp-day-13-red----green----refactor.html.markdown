@@ -13,7 +13,7 @@ link: http://www.paulzaich.com/2012/06/27/blog/ruby-rails/dev-bootcamp-day-13-re
 Tests. We had our first real taste of trying to write Rspec tests today. We did it in reverse order though from its conventional use in Test Driven Development (TDD). Instead of using Rspec to define the different outputs that the application should provide, we wrote tests to cover the existing design for the command line To Do application we built last week.
 
 
-![](http://www.paulzaich.com/wp-content/uploads/2012/06/rspec-dots-560x56.png)
+![](/images/blog/rspec-dots.png)
 
 After the exercise, the tests and the syntax definitely seemed more straightforward than my previous experiences with them in Hartl's tutorial. This might be in part to my greatly improved knowledge of Ruby in the past few weeks.
 

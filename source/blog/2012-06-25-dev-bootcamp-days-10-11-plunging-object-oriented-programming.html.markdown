@@ -17,8 +17,9 @@ The number one rule for me has been to think about the 
 **scope**
  of each object and which object should know what piece of information. Breaking the different methods operating on each object has really started to feel more comfortable and much less convoluted then functional style programming. It provides a good framework for piecing your methods into short, concise methods that act on the class.
 
-[caption id="attachment_457" align="aligncenter" width="560"]
-![](http://www.paulzaich.com/wp-content/uploads/2012/06/4504469260_43ea697e9d_b-560x420.jpg) http://www.flickr.com/photos/the-consortium/4504469260/[/caption]
+![](https://c1.staticflickr.com/5/4055/4504469260_43ea697e9d_b.jpg)
+
+http://www.flickr.com/photos/the-consortium/4504469260/
 
 Today was our biggest challenge yet: Create a Sudoku Puzzle solver. To be honest, I was a little intimidated when were were assigned this problem. The puzzle was clearly going to require the most advanced algorithm work yet and would also test my understanding of Object Oriented design.
 [Brett](http://brettcamarda.com/) and I teamed up and did a thorough job of trying to has through all the steps required to solve the puzzle and where each of these methods should exist. The toughest piece turned out to be figuring out how to parse the number sets in the grid into different arrays for the columns, rows and 9-number sub-grids. We were able to use 3 classes, a GameBoard class, a Container class (for the cols, rows and sub-grids) and a Cell class to define the dynamics of the game board. We checked each cell for the overlapping values in it's row, column and sub-grid and subtracted this combined array from the possible values [1..9]. Turns out that this will work for phase 1 of the project and will only solve simple Sudoku!

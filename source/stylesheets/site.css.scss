@@ -342,6 +342,11 @@ mark {background-color: #eeeeee; color: #000; font-style: italic; font-weight: b
       border-color: darken(#1EF2B4, 10%);
     }
   }
+
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
 }
 
 #header{

@@ -23,23 +23,23 @@ I did make some nice discoveries about the finer points of using the #select met
 I also discovered that you can use #collect_with_index much like you would use #each_with_index on an array. This made parsing through each element way quicker and cleaner than having to set a local variable.
 
 
-class String
-  def fun_string!
-    new_string = self.split('').collect.with_index do |letter, i|
-      if i.even? && i != 0
-letter.upcase
-      else
-letter
+    class String
+      def fun_string!
+        new_string = self.split('').collect.with_index do |letter, i|
+          if i.even? && i != 0
+    letter.upcase
+          else
+    letter
+          end
+        end
+        new_string.reverse.join('')
       end
     end
-    new_string.reverse.join('')
-  end
-end
 
 I spent a little time reading through two docs on Rspec, TDD and BDD development before lunch in preparation for more on this tomorrow. The rest of the day was focused on Javascript and running through the basic exercises we did previously in Ruby. Everything was fairly straightforward until we hit defining Classes in Javascript.
 
-[caption id="attachment_464" align="aligncenter" width="560"]
-![](http://www.paulzaich.com/wp-content/uploads/2012/06/photo-2-560x418.jpg) Working on JS on a beautiful day with Coit Tower out the window.[/caption]
+![](/images/blog/2012-06-26-dev-bootcamp-day-12.jpg)
+Working on JS on a beautiful day with Coit Tower out the window.
 
 It turns out that Javascript doesn't define classes like Ruby. Javascript is leaves it up to you to create classes if you so choose by using Objects that reference different functions inside that object. It actually makes Javascript more flexible in some regards (Javascript fanboys please stand up). I'm still understanding the finer points here.
 
@@ -51,10 +51,10 @@ Javascript is definitely leaner in its library of default methods and Brick and 
 Here's the custom each method in Javascript:
 
 
-Array.prototype.new_each = function(callback){
-  for (var i = 0; i < this.length; i++){
-    var element = this[i];
-    callback(element);
-  }
-  return this;
-}
+    Array.prototype.new_each = function(callback){
+      for (var i = 0; i < this.length; i++){
+        var element = this[i];
+        callback(element);
+      }
+      return this;
+    }

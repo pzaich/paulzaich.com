@@ -16,27 +16,27 @@ Coming from the world of classes in Ruby, the lack of them in Javascript came as
 [this response](http://stackoverflow.com/questions/1114024/constructors-in-javascript-objects) on StackOverflow. Here's a very simple Die constructor that demonstrates the Constructor.
 
 
-var Die = function(sides) {
-  sides = sides;
-  this.getSides = function () {
-    return this.sides;
-  }
-  this.roll = function () {
-    return Math.floor((Math.random()*this.sides)+1)
-  }
-}
+    var Die = function(sides) {
+      sides = sides;
+      this.getSides = function () {
+        return this.sides;
+      }
+      this.roll = function () {
+        return Math.floor((Math.random()*this.sides)+1)
+      }
+    }
 
 
 [Phil](http://philaquilina.tumblr.com/) shared another way to make the same simple constructor. I'm still trying to determine the cleaner way to implement these types of Constructors.
 
 
-var Die = function(sides) {
-  return {
-    getSides: function() {
-      return sides;
-    },
-    roll: function() {
-      return Math.floor((Math.random()*this.sides)+1);
+    var Die = function(sides) {
+      return {
+        getSides: function() {
+          return sides;
+        },
+        roll: function() {
+          return Math.floor((Math.random()*this.sides)+1);
+        }
+      }
     }
-  }
-}

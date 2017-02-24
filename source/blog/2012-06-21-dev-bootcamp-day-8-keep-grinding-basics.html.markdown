@@ -18,13 +18,13 @@ After class, a bunch of folks stuck around to work on Javascript and we ended up
 [this](http://codeclasschat.herokuapp.com/).
 
 
-helpers.fetchNewMessages(callback)
+    helpers.fetchNewMessages(callback)
 
 
-helpers.renderMessage(messageText)
+    helpers.renderMessage(messageText)
 
 
-helpers.sendMessage(messageText)
+    helpers.sendMessage(messageText)
 
 We needed to call helpers.fetchNewmessages (which returns an array of outstanding messages) every two seconds and parse these out into individual strings that would be added to the page by the helpers.renderMessage function. Then we needed to add some scripts to take the text added to the textarea input and send it as the argument in helpers.sendMessage. This was relatively simple as we were using jQuery to find the value and send the callback to the server. It was a fun little exercise.
 

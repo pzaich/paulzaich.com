@@ -17,7 +17,7 @@ Yesterday I paired up with
 
 We used a simple each statement initially to solve the problem, setting up a range to list all the numbers between 1 and the number that had been passed in.
 
-
+`
 def factorial(number)
 product = 1
 if number != 0
@@ -27,16 +27,18 @@ end
 end
 product
 end
+`
 
 We came to the realization while doing this exercise that the .each method does not return the product variable automatically. We asked
 [Robert](http://knowledgepile.net/), one of the Ruby masters teaching us here, about this and he told us to check out  the .inject method because it will automatically return the result. It turns out .inject can also allow you to create an amazingly concise version of the code above. Brick and I spent the next 45 minutes diving in and here were the refactored version of the code above that we were able to come up with.
 
 It turns out that we can completely eliminate the need for the product variable with inject because the result is already assumed and passed an initial value (1 in this case).
 
-
+`
 def factorial(number)
 (1..number).inject(1) { |product, n| product * n}
 end
+`
 
 Each time that the loop is run, this initial value (and eventual result returned) is passed back into the function to be operated against n.
 
@@ -44,10 +46,11 @@ Already a lot simpler right?
 
 How about this?
 
-
+`
 def factorial(number)
 (1..number).inject(1, :*)
 end
+`
 
 Inject can also receive a special syntax which expects the initial result and the operator that the range of numbers should be executed against the initial result.
 

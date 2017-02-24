@@ -13,8 +13,8 @@ link: http://www.paulzaich.com/2012/06/21/blog/ruby-rails/dev-bootcamp-day-9-wax
 Tonight we were privileged to hear from the founder of Pivotal Labs, which among other things is known for its dedication to Pair Programming. Rob Mee's summed up his talk by emphasizing that over the next ten weeks, we should get really good at the
 basics. Become a "world-class beginner". Rob used the analogy of the Karate Kid "wax on, wax off" to illustrate his view of how programming skill must be developed. If you understand the fundamentals of programming really well, you will be able to learn effectively as you go.
 
-[caption id="attachment_446" align="aligncenter" width="560"]
-![](http://www.paulzaich.com/wp-content/uploads/2012/06/photo2-560x418.jpg) Rob Mee Talks about Programming[/caption]
+![](/images/blog/2012-06-21-dev-bootcamp-day-9.jpg)
+Rob Mee Talks about Programming
 
 Rob talked about his own journey from Majoring in Japanese at Cal (Trying not to hold it against him!), to discovering programming and his breakthrough moment, to his own hiring practices and what he thinks makes a good programmer. What kept coming back to me is that in addition to having good fundamental technical skills, the most important skills a developer can benefit from are empathy and the ability to work closely with other teammates. This clearly goes against the stereotype, yet I keep hearing it from all directions over the past two weeks of Bootcamp.
 

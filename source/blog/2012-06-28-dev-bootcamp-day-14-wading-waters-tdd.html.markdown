@@ -17,9 +17,10 @@ The deep, shark-infested waters of RSpec, tests and TDD are finally upon us. As 
 TDD is all about writing as little code to get the test spec to pass. One thing I didn't really 
 get until today after Shereef had beaten it in to my head several times, is that it turns out that you should reallly try to write code that breaks the tests by writing a minimal amount of code. If you can get a test to pass without actually writing want to you want your app to do, your tests are not specific enough and probably are testing the right things.
 
-[caption id="attachment_487" align="aligncenter" width="500"]
-![](http://www.paulzaich.com/wp-content/uploads/2012/06/5446692740_c4d23dd3e9.jpg) Photo Credit:
-[http://www.flickr.com/photos/magnusbrath/5446692740/](http://www.flickr.com/photos/magnusbrath/5446692740/)[/caption]
+![](https://c2.staticflickr.com/6/5294/5446692740_c4d23dd3e9_b.jpg)
+
+Photo Credit:
+http://www.flickr.com/photos/magnusbrath/5446692740/
 
 The morning consisted of trying to rebuild the now infamous Todo app, this time focusing purely on making each test pass. I found it very frustrating and not very helpful, though it definitely helped improve my syntax and experience with writing RSpec. More than anything, I think the exercise proved to me that YOU DO NOT WRITE YOUR TESTS AFTER WRITING YOUR CODE. The RSPEC tests that we were working off of yesterday were full of holes that would not have been there if it had been coded sequentially using a TDD approach. Filling in the gaps afterwords is just too hard.
 

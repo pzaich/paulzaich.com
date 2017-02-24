@@ -11,14 +11,13 @@ category: ruby-rails
 link: http://www.paulzaich.com/2012/06/20/blog/ruby-rails/dev-bootcamp-day-7-tell-dont-ask/
 ---
 
-Another busy and productive day at Bootcamp. I'm going to keep it short and try to get some sleep after a late night on Monday. The day began with a lecture on Class construction by Shereef.>When you are giving birth to a method, ask yourself, what am I going to name my child.
+Another busy and productive day at Bootcamp. I'm going to keep it short and try to get some sleep after a late night on Monday. The day began with a lecture on Class construction by Shereef. When you are giving birth to a method, ask yourself, what am I going to name my child.
 
-[caption id="attachment_427" align="aligncenter" width="560"]
-[![](http://www.paulzaich.com/wp-content/uploads/2012/06/126070445_82ca5f6f4c_z-560x420.jpeg)](http://www.paulzaich.com/2012/06/20/ruby-rails/dev-bootcamp-day-7-tell-dont-ask/attachment/126070445_82ca5f6f4c_z/) Courtesy of http://www.flickr.com/photos/71217725@N00/126070445/[/caption]
+![](https://c1.staticflickr.com/1/53/126070445_82ca5f6f4c_o.jpg)
 
 His point being that naming and thoughtfulness in the design of your methods surrounding a Class is very important in object-oriented programming. Shereef made two hypothetical classes CookieJar and Cookie and showed us that if you want to control the number of chocolate chips in the cookies, you should be checking for this in the Cookie class, not the Cookie Jar.
 
-Tell, Don't Ask
+###Tell, Don't Ask
 
 The take away for me was that you need to think carefully about which object you are truly acting on when constructing a method and then define it in that class if possible. Tell a class instance what it should be so that other classes can reference that method to check, don't have the other classes ask to check a specific attribute of that class instance.  I'm sure there are grey areas here where judgement needed and this is where the truly skilled and thoughtful developer will find an elegant solution.
 

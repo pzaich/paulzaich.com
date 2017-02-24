@@ -19,8 +19,8 @@ I was itching to get into our first "real" project in the afternoon, but ended u
 [Brian](http://codesponge.tumblr.com/). Basically we needed to chop off the last word of the inputed string and return the string to an array until the sentence had been shortened to one word. We also built a fun "BaseballTeam" class written by
 [Patrick](http://enterdev.tumblr.com) which consisted of creating methods to add to and list players hashes within a all-star team hash.
 
-[caption id="attachment_420" align="aligncenter" width="560"]
-[![](http://www.paulzaich.com/wp-content/uploads/2012/06/photo1-560x418.jpg)](http://www.paulzaich.com/wp-content/uploads/2012/06/photo1.jpg) Working after hours. Too much fun to leave.[/caption]
+![](/images/blog/dev-bootcamp-week-1-recap.jpg)
+Working after hours. Too much fun to leave.
 
 After dinner, I had the chance to work with
 [Ken](http://qfthr.tumblr.com/) and we dove head first into JSTwitter, a terminal client for Twitter. Fun to really start seeing how to define methods around an object using the Twitter API.
