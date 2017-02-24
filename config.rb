@@ -15,7 +15,6 @@ activate :blog do |blog|
   blog.sources = '/blog/{year}-{month}-{day}-{title}.html'
   blog.paginate = true
   blog.per_page = 5
-  blog.current_template = nil
 end
 activate :directory_indexes
 
