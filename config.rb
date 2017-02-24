@@ -15,6 +15,7 @@ activate :blog do |blog|
   blog.sources = '/blog/{year}-{month}-{day}-{title}.html'
   blog.paginate = true
   blog.per_page = 5
+  blog.current_template = nil
 end
 activate :directory_indexes
 
@@ -49,10 +50,12 @@ end
 # Build-specific configuration
 configure :build do
   # Minify CSS on build
-  # activate :minify_css
+  activate :minify_css
 
   # Minify Javascript on build
-  # activate :minify_javascript
+  activate :minify_javascript
+end
 
-  activate :directory_indexes
+activate :deploy do |deploy|
+  deploy.deploy_method = :git
 end

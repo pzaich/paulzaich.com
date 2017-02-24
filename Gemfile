@@ -14,3 +14,4 @@ gem 'builder'
 gem 'nokogiri'
 gem "middleman-blog", "~> 4.0"
 gem 'middleman-livereload', '~> 3.4'
+gem 'middleman-deploy', github: 'middleman-contrib/middleman-deploy'
