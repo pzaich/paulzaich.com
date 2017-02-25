@@ -57,4 +57,6 @@ end
 
 activate :deploy do |deploy|
   deploy.deploy_method = :git
+  deploy.remote = 'git@github.com:pzaich/pzaich.github.io.git'
+  deploy.branch = 'master'
 end
