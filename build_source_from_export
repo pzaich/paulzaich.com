@@ -1,0 +1,26 @@
+#!/usr/bin/env ruby
+require 'fileutils'
+
+# Dir.entries('export').each do |file_name|
+#   if File.file?("export/#{file_name}") && file_name != ".DS_Store"
+#     file = File.read("export/#{file_name}")
+#     canonical_url = file.match(/(http:\/\/www.paulzaich.com.*\/)/).captures.first
+
+#     puts canonical_url
+
+#     subdirectories = canonical_url.gsub('http://www.paulzaich.com/', "").split('/')
+
+#     subdirectory_path = "source/#{subdirectories.join('/')}"
+#     puts subdirectories.inspect
+
+#     FileUtils.mkdir_p(subdirectory_path)
+#     FileUtils.cp("export/#{file_name}", "#{subdirectory_path}/index.html")
+#   end
+# end
+
+Dir.entries("source/blog").each do |file_name|
+  if File.file?("source/blog/#{file_name}") && file_name != ".DS_Store"
+    FileUtils.mv("source/blog/#{file_name}", "source/blog/temp_#{file_name.downcase}")
+    FileUtils.mv("source/blog/temp_#{file_name.downcase}", "source/blog/#{file_name.downcase}")
+  end
+end
